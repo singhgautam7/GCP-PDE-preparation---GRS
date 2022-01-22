@@ -16,3 +16,16 @@
 -   **Ensemble learning** — Training multiple models with different parameters to solve the same problem
 -   **Numerical instability —** Many deep learning algorithms can run issues with very large or very small values due to the limits of floating point number representations in computers
 -   **Gradient explosion**- A common case of numerical instability
+- **Label**: The correct classification/value
+- **Input**: Predictor Variables - Example: Input + Label sample to train your model
+- **Model**: Mathematical function, Some work is done on inputs for an output
+- **Training**: Adjusting Variable weights in a model to minimize error
+- **Prediction**: Using the model to guess the label for an input - Supervised Learning: Training your model using examples data to predict future data
+- **Unsupervised Learning**: Data is analyzed without labels for patterns or clusters
+- **Neuron**: A way to combine inputs and weighting them to make a decision (it is one unit of input combination)
+- **Gradient Descent**: The process of testing error in order to minimize its value iteratively decreases towards a minimum. (This can be global or local maximum and starting points and learning rates are important to ensure the process doesn’t stop at local minima. Too low a learning rate and your model will train slowly, too high and it may miss the minimum)
+- **Hidden Layer**: A set of neurons that act on the same input data.
+- **Features**: The data values/fields you choose to model, these can be transformed (x^2, y^2, etc)
+- **Feature Engineering**: The process of building a set of feature combinations to act on inputs
+- **Precision**: The positive predictive value how many times it correctly predicted a thing as its classification (eg cat)
+- **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
