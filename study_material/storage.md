@@ -19,7 +19,6 @@ TYPES OF STORAGE
 |
 ├── Unstructured
 │   ├── Cloud Storage
-|
 ```
 
 ## Cloud Storage
