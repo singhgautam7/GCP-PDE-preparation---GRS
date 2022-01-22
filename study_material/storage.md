@@ -1,25 +1,27 @@
 # Storage and Databases
 
-```mermaid
-graph TD
-Z[Types of Storage]
-Z --> A
-Z --> G
-Z --> L
-
-A(Structured) --> B(Transactional)
-A --> C(Analytical)
-B --> D(Cloud SQL)
-B --> E(Cloud Spanner)
-C --> F(Big Query)
-
-G(Semi-Structured) --> H(Fully-Indexed)
-H --> I(DataStore/FireStore)
-G --> J(Row-Key)
-J --> K(BigTable)
-
-L(Un-Structured) --> M(Cloud Storage)
 ```
+TYPES OF STORAGE
+├── Structured
+│   ├── Transactional
+│   │   ├── Cloud SQL
+│   │   ├── Cloud Spanner
+│   │
+│   ├── Analytical
+│   │   ├── Cloud SQL
+|
+├── Semi-Structured
+│   ├── Full-Indexed
+│   │   ├── DataStore / FireStore
+│   │
+│   ├── Row Key
+│   │   ├── Big Query
+|
+├── Unstructured
+│   ├── Cloud Storage
+|
+```
+
 ## Cloud Storage
  - It is a bucket, or we can call it a blob storage - similar to *Amazon S3
  - The content is not indexed at all.
