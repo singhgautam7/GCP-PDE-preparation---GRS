@@ -145,11 +145,13 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Querying is very expensive here
 - Command line tool = `bq`
 - Hierarchy - 
+```
 ├── Project
 │   ├── Datasets
 │   │   ├── Tables
 │   │   │   ├── Data
 │   │   │   ├── Jobs
+```
 - Tables here have schema
 - Types of tables - 
 	- Native tables
