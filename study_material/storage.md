@@ -9,14 +9,14 @@ TYPES OF STORAGE
 │   │
 │   ├── Analytical
 │   │   ├── Cloud SQL
-|
+│
 ├── Semi-Structured
 │   ├── Full-Indexed
 │   │   ├── DataStore / FireStore
 │   │
 │   ├── Row Key
 │   │   ├── Big Query
-|
+│
 ├── Unstructured
 │   ├── Cloud Storage
 ```
