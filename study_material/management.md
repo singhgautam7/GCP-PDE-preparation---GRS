@@ -44,16 +44,6 @@ TYPES OF ROLES
 	- Debugging by inspecting the state of your application at any code location in production without stopping or slowing down your requests
 	- Security Management - provides near real-time user activity visibility across Google Cloud
 
-## Data Studio
-- Business Intelligence tool from Google
-- Completely free
-- Drag & drop, no code
-- Connect your data from spreadsheets, Analytics, Google Ads, Google BigQuery and many more connectors
-- Create reports & Dashboards
-- Prefetch cache - 
-	- You can turn the prefetch cache on, if you are using a data source that incurs usage costs (e.g., BigQuery) and want to minimize those costs
-	- You can turn the prefetch cache off for a given report, if your data changes frequently and you want to prioritize freshness over performance
-
 ## Cloud Deployment Manager
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
 
