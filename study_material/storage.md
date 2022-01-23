@@ -188,7 +188,14 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 	- Data can only be exported in JSON / CSV / Avro
 	- To export more than 1 GB of data, you need to put a wildcard in the destination filename. (up to 1 GB of table data to a single file)
 
-## Choosing the Database
+## Choosing a Database
+- If there is a requirement to search terabytes or petabytes of data relatively quickly it will make more sense to simply store in BigQuery.
+- If the data set is relatively small < 10TB then DataStore will be preferred.
+- If the data set is > 10TB and/or there is no requirement for multiple indexes then BigTable will be better.
+- If searching for objects by attribute value is required, then Datastore is preferred.
+- If high throughput writes of wide column data then Bigtable is preferred.
+- If there is a need of data warehousing then BigQuery is preferred.
+
 ![enter image description here](https://juanignaciosl.github.io/img/deogcp-storage.png)
 
 ![enter image description here](https://storage.googleapis.com/gweb-cloudblog-publish/images/Which-Database_v07-10-21_1.max-2000x2000.jpeg)
