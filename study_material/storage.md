@@ -126,9 +126,10 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 	- Can manage security at project, instance and table levels
 - Backups are also supported.
 - It does not support SQL queries, joins or multi-row transactions.
+-  Not good for data less than 1TB of data or items greater than 10MB.
 - `cbt` is a tool for doing basic interactions with Cloud Bigtable
 -  Impossible to Switching between SSD and HDD
-- [Garbage collection](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/references/garbage_collection.md) is supported.
+- [Garbage collection](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/garbage_collection.md) is supported.
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
