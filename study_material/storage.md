@@ -1,26 +1,6 @@
 # Storage and Databases
 
 ![Types of storage](https://cloud.google.com/architecture/images/data-lifecycle-3.svg)
-```
-TYPES OF STORAGE
-├── Structured
-│   ├── Transactional
-│   │   ├── Cloud SQL
-│   │   ├── Cloud Spanner
-│   │
-│   ├── Analytical
-│   │   ├── Cloud SQL
-│
-├── Semi-Structured
-│   ├── Full-Indexed
-│   │   ├── DataStore / FireStore
-│   │
-│   ├── Row Key
-│   │   ├── Big Query
-│
-├── Unstructured
-│   ├── Cloud Storage
-```
 
 ## Cloud Storage
  - It is a bucket, or we can call it a blob storage - similar to *Amazon S3
