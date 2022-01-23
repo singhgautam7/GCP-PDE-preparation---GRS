@@ -70,3 +70,8 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
  - Helps you create, schedule, monitor and manage workflows
  - Workflows are defined as DAG (Direct Acyclic Graphs) which are written in Python 3.x
  - This also has built-in support for other GCP services like Pub?sub, Cloud Storage, DataFlow, DataProc
+
+## Cloud Functions
+You can refer to [this](https://cloud.google.com/functions/docs) for docs.
+- No ops, no server just code entry point and response, auto-scaled by GCP
+- Can be triggered by dataflow, GCS bucket events, Pub/Sub Messages and HTTP Calls
