@@ -187,6 +187,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Data Export - 
 	- Data can only be exported in JSON / CSV / Avro
 	- To export more than 1 GB of data, you need to put a wildcard in the destination filename. (up to 1 GB of table data to a single file)
+- [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
 
 ## Choosing a Database
 - If there is a requirement to search terabytes or petabytes of data relatively quickly it will make more sense to simply store in BigQuery.
