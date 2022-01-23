@@ -105,7 +105,6 @@ If you are planning to create a big product or if you want to be ready for a hug
 Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Stored on Google’s internal store Colossus 
 - No transactional support (so can handle petabytes of data)
-- Not a good solution for storing less than 1 TB of data
 - Bigtable is a key/value store, not a relational store. It does not support joins, and transactions are supported only within a single row
 - Each table has only one index, the row key, and each row key must be unique
 - Bigtable tables are sparse. A column doesn't take up any space in a row that doesn't use the column
@@ -126,10 +125,13 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 	- Can manage security at project, instance and table levels
 - Backups are also supported.
 - It does not support SQL queries, joins or multi-row transactions.
--  Not good for data less than 1TB of data or items greater than 10MB.
+- Not good for data less than 1TB of data or items greater than 10MB.
 - `cbt` is a tool for doing basic interactions with Cloud Bigtable
--  Impossible to Switching between SSD and HDD
+- Impossible to Switching between SSD and HDD
 - [Garbage collection](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/garbage_collection.md) is supported.
+- Supports max of 1,000 tables in each instance.
+- Can use up to around 100 column families.
+- Empty columns don’t take up any space. Can create large number of columns, even if most columns are empty in most rows
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
