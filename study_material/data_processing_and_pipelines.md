@@ -11,7 +11,7 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - An example of dataflow can be seen in the following image: 
 ![Google Stream Analysis](https://www.gstatic.com/bricks/image/f4f99d139d05057c917bb62406d1c36ab2f297d945f9c7d340208211dc217d19.svg)
  - Jobs can be created with inbuilt templates, or notebook instances(write jobs in Java/Python/SQL)
- - Can apply [windowing](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/references/windowing.md) to streams for rolling average for the window, max in a window etc.
+ - Can apply [windowing](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/windowing.md) to streams for rolling average for the window, max in a window etc.
  - Triggers determines when a Window's contents should be output based on certain criteria being met. Types of triggers are :  
 	 - Time based triggers
 	 - Data Driven triggers
