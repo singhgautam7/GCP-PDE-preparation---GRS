@@ -174,6 +174,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Authorized views allows to share query results without giving access to the underlying data
 - Caching time = 24 hrs
 - No prices from data fetched from cache.
+- Wildcard tables - Used if you want to union all similar tables with similar names. ’*’ (e.g. project.dataset.Table*)
 - Partitioning in BigQuery : Dividing a table into segments to make it easier to manage and query data. This saves cost and time. Partition is nothing but a newly created table.
 	- Time Unit Column Partition - Based on timestamp, date or datetime col in a table. Special partitions are `__NULL__`(contains rows with null values in partitioning column) and `__UNPARTITIONED__`(value of partitioning column not in partitioning range)
 	- Ingestion Time Partition - Partitioned by the time row was ingested in a table.
@@ -190,6 +191,36 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Data Export - 
 	- Data can only be exported in JSON / CSV / Avro
 	- To export more than 1 GB of data, you need to put a wildcard in the destination filename. (up to 1 GB of table data to a single file)
+- You can load data into BigQuery via two options: batch loading (free) and streaming (costly).
+- Controlling costs - 
+	- Avoid SELECT * (full scan), select only columns needed (SELECT * EXCEPT)
+	- Sample data using preview options for free
+	- Preview queries to estimate costs (dryrun)
+	- Use max bytes billed to limit query costs
+	- Don’t use LIMIT clause to limit costs (still full scan)
+	- Monitor costs using dashboards and audit logs
+	- Partition data by date
+	- Break query results into stages
+	- Use default table expiration to delete unneeded data
+	- Use streaming inserts wisely
+	- Set hard limit on bytes (members) processed per day
+- Query Performace: Generally, queries that do less work perform better.
+	- Input Data/Data Sources
+		- Avoid SELECT *
+		- Prune partitioned queries (for time-partitioned table, use PARTITIONTIME pseudo column to filter partitions)
+		- Denormalize data (use nested and repeated fields)
+		- Use external data sources appropriately
+		- Avoid excessive wildcard tables
+	- SQL Anti-Patterns
+		- Avoid self-joins., use window functions (perform calculations across many table rows related to current row)
+		- Partition/Skew: avoid unequally sized partitions, or when a value occurs more often than any other value
+		- Cross-Join: avoid joins that generate more outputs than inputs (pre-aggregate data or use window function) Update/Insert Single Row/Column: avoid point-specific DML, instead batch updates and inserts.
+	- Optimizing Query Computation
+		- Avoid repeatedly transforming data via SQL queries
+		- Avoid JavaScript user-defined functions
+		- Use approximate aggregation functions (approx count)
+		- Order query operations to maximize performance. Use ORDER BY only in outermost query, push complex operations to end of the query.
+		- For queries that join data from multiple tables, optimize join patterns. Start with the largest table.
 - [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
 - [Link](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns) for Best practices for performance
 
