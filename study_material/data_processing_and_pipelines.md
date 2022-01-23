@@ -1,3 +1,4 @@
+
 # Data Processing / Data Pipelines
 
 ## Dataflow
@@ -91,3 +92,6 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
 You can refer to [this](https://cloud.google.com/functions/docs) for docs.
 - No ops, no server just code entry point and response, auto-scaled by GCP
 - Can be triggered by dataflow, GCS bucket events, Pub/Sub Messages and HTTP Calls
+
+## DataProc vs DataFlow vs DataPrep
+![enter image description here](https://cloud.google.com/architecture/images/data-lifecycle-4.svg)
