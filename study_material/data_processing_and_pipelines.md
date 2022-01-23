@@ -22,7 +22,7 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
 
 ## DataProc
 You can refer to [this](https://cloud.google.com/dataproc/) for docs.
- - Dataproc is managed (No Ops) Hadoop cluster on GCP (i.e. managed Hadoop, Pig, Hive, Spark programs)
+ - Provides access to Hadoop cluster on GCP and Hadoop-ecosystem tools (Pig, Hive, and Spark).
  - Lift and Shift existing Spark/Hadoop jobs is possible
  - Automated cluster management
  - Cluster types - 
