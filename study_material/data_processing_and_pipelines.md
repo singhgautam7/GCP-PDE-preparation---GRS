@@ -32,6 +32,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
  - Worker node can be a regular VM or a Preemptible VM.
  - Job Supported - Hadoop, SparkR, Spark, SparkSQL, Hive, Pig, PySpark
  - Can store data on disk (HDFS) or can use GCS
+ - Google recommends using Cloud Storage instead of HDFS as it is much more cost effective especially when jobs aren’t running.
  - IAM - 
 	 - Service accounts used with Cloud Dataproc must have Dataproc/Dataproc Worker role (or have all the permissions granted by Dataproc Worker role).
 		 - Need permissions to read and write to Google Cloud Storage, and to write to Google Cloud Logging
