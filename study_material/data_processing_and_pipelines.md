@@ -63,6 +63,11 @@ You can refer to [this](https://cloud.google.com/data-fusion) for docs.
 ## DataPrep
 You can refer to [this](https://cloud.google.com/dataprep/docs/how-to) for docs.
  - Service for visually exploring, cleaning, and preparing data for analysis. can transform data of any size stored in CSV, JSON, or relational table formats
+ - Build by Trifacta – Third Party tool, not cloud native one
+ - Dataprep is serverless and works at any scale
+ - No code required
+ - No infrastructure to deploy or manage
+ - Automatically detect schema, anomalies
 
 ## Cloud Composer
 You can refer to [this](https://cloud.google.com/composer/docs) for docs.
