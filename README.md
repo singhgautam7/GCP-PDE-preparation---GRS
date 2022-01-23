@@ -1,4 +1,4 @@
-# GCP PDE Exam Preparation Guide
+# Google Professional Data Engineering(PDE) Certification Exam Preparation Guide
 
 This guide is created for the preparation/revision for the Google Professional Data Engineering certification exam. 
 
