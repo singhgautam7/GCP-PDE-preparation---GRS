@@ -1,5 +1,6 @@
 # Storage and Databases
 
+![Types of storage](https://cloud.google.com/architecture/images/data-lifecycle-3.svg)
 ```
 TYPES OF STORAGE
 ├── Structured
