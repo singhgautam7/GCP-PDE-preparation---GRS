@@ -60,9 +60,12 @@ You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
 	 - Gather events from many clients simultaneously and use stream processing (like dataflow to deliver it to BigQuery, BigTable, CloudStorage on other DBs.
 	 - Replicating data among DBs
 	 - Parallel processing by Pub/Sub messages to connect to cloud functions.
-	 - Data streaming for IOT devices.
-	 - Cache invalidation for distributed cashes by publishing events.
+	 - Data streaming for  various processes or devices(ex- IOT devices).
+	 - Cache invalidation for distributed cashes by publishing events, i.e. refreshing caches.
 	 - Load balancing for reliability.
+	 - Implementing asynchronous workflows.
+	 - Distributing event notifications.
+	 - Logging to multiple systems.
 
 ## Data Fusion
 You can refer to [this](https://cloud.google.com/data-fusion) for docs.
