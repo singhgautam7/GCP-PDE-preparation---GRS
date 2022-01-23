@@ -1,5 +1,10 @@
 # GCP PDE Exam Preparation Guide
 
+This guide is created for the preparation/revision for the Google Professional Data Engineering certification exam. 
+
+I have tried to divide the topics into sections for better understanding and topic-specific revisions.
+
+After the revision, here is a [link](https://quizlet.com/591586946/flashcards) for PDE practice questions dump.
 
 ## Exam Topics
 #### Section 1. Designing data processing systems
