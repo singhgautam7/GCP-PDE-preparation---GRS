@@ -15,6 +15,9 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
 ![Google Stream Analysis](https://www.gstatic.com/bricks/image/f4f99d139d05057c917bb62406d1c36ab2f297d945f9c7d340208211dc217d19.svg)
  - Jobs can be created with inbuilt templates, or notebook instances(write jobs in Java/Python/SQL)
  - Can apply [windowing](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/windowing.md) to streams for rolling average for the window, max in a window etc.
+ - You can stop a Dataflow job in the following two ways:
+	- Canceling a job. This method applies to both streaming and batch pipelines. Canceling a job stops the Dataflow service from processing any data, including buffered data
+	- Draining a job. This method applies only to streaming pipelines. Draining a job enables the Dataflow service to finish processing the buffered data while simultaneously ceasing the ingestion of new data.
  - Concepts - 
  	- **Pipeline**: encapsulates series of computations that accepts input data from external sources, transforms data to provide some useful intelligence, and produce output
 	- **PCollections**: abstraction that represents a potentially distributed, multi-element data set, that acts as the pipeline’s data. PCollection objects represent input, intermediate, and output data. The edges of the pipeline.
