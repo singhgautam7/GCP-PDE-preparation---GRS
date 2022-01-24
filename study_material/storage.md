@@ -116,6 +116,19 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Supports max of 1,000 tables in each instance.
 - Can use up to around 100 column families.
 - Empty columns don’t take up any space. Can create large number of columns, even if most columns are empty in most rows
+- Creating row keys- 
+	- Design your row key based on the queries you will use to retrieve the data.
+	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows. Otherwise, your query requires a table scan, which is much slower than retrieving specific rows.
+	- For example, if your application tracks mobile device data, you can have a row key that consists of device type, device ID, and the day the data is recorded. Row keys for this data might look like this:
+		- `phone#4c410523#20200501`
+		- `phone#4c410523#20200502`
+		- `tablet#a0b81f74#20200501`
+		- `tablet#a0b81f74#20200502`
+	- This row key design lets you retrieve data with a single request for:
+		- A device type
+		- A combination of device type and device ID
+	- This row key design would not be optimal if you want to retrieve all data for a given day. Because the day is stored in the third segment, or the row key suffix, you cannot just request a range of rows based on the suffix or a middle segment of the row key.
+	- In many cases, you should design row keys that start with a common value and end with a granular value.
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
