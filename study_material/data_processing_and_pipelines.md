@@ -10,6 +10,7 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Multi-Step processing data. Eg: Wordcount.
  - Used for data processing, ELT(Extract Transform Load), filter, group for data sets.
  - Can read data from multiple sources, can kick off multiple cloud functions in parallel and can also writer to multiple sinks (like BigQuery, BigTable etc.)
+ - When you update a job on the Dataflow service, you replace the existing job with a new job that runs your updated pipeline code
  - An example of dataflow can be seen in the following image: 
 ![Google Stream Analysis](https://www.gstatic.com/bricks/image/f4f99d139d05057c917bb62406d1c36ab2f297d945f9c7d340208211dc217d19.svg)
  - Jobs can be created with inbuilt templates, or notebook instances(write jobs in Java/Python/SQL)
