@@ -2,7 +2,7 @@
 Numbering functions are simply a subgroup of analytic functions. Numbering functions simply assign integer values to each row, depending on their position in the specified window.
 
 ## Row Numbering in BigQuery
-- ROW_NUMBER is an analytic function.
+- ROW_NUMBER is an [analytic function](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/edit/main/study_material/others/definitions/windowing.md).
 - ROW_NUMBER generates a series of temporary values that are assigned to figures, and is calculated dynamically based on when the query is executed.
 
 ### Example
