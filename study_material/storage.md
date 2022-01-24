@@ -129,6 +129,8 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 		- A combination of device type and device ID
 	- This row key design would not be optimal if you want to retrieve all data for a given day. Because the day is stored in the third segment, or the row key suffix, you cannot just request a range of rows based on the suffix or a middle segment of the row key.
 	- In many cases, you should design row keys that start with a common value and end with a granular value.
+	- Avoid using a single row key to identify a value that must be updated very frequently
+	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order, making it impossible to store rows in a way that are optimal for querying
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
