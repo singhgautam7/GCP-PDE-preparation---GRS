@@ -1,5 +1,16 @@
 ## Windowing
-Windowing is the process of taking a small subset of a larger dataset, for processing and analysis. A naive approach, the rectangular window, involves simply truncating the dataset before and after the window, while not modifying the contents of the window at all.
+- Windowing is the process of taking a small subset of a larger dataset, for processing and analysis. 
+- A naive approach, the rectangular window, involves simply truncating the dataset before and after the window, while not modifying the contents of the window at all.
+- Types:
+    1. **Fixed Window**:
+        Windows of fixed interval duration, uniform across all the keys, no overlaps between two consecutive widows.
+        Use cases — any aggregation use cases, any batch analysis of data, relatively simple use cases.
+    2. **Sliding Window**:
+        Windows of fixed interval duration, uniform across all the keys, overlap between two windows (same element can be present in multiple windows)
+        Use cases — Moving averages of data
+    3. **Session Window**:
+        Windows of dynamically set intervals, non-uniform across keys (different windows for different keys, different window sizes for each key), no overlap between two windows
+        Use cases — user session data, click data, real time gaming data analysis
 
 ## Window functions or Analytic functions
 - Analytic functions are those which compute values over groups of rows, returning a single result for each of the rows.
