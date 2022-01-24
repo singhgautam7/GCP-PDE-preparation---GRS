@@ -88,6 +88,9 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - No transactional support (so can handle petabytes of data)
 - Bigtable is a key/value store, not a relational store. It does not support joins, and transactions are supported only within a single row
 - Each table has only one index, the row key, and each row key must be unique
+	- Best practices of bigtable states that rowkey:
+		- Should not be only timestamp 
+		- Should not have timestamp at starting.
 - Bigtable tables are sparse. A column doesn't take up any space in a row that doesn't use the column
 - Data Replication: Replications is copying data across multiple regions to increase durability. Just add another cluster and it will be possible to replicate the data.
 - No downtime for cluster resize
