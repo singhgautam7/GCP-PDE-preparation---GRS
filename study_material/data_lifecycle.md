@@ -5,4 +5,4 @@ The data lifecycle has four steps.
 -   **Store**: After the data has been retrieved, it needs to be stored in a format that is durable and can be easily accessed.
 -   **Process and analyze**: In this stage, the data is transformed from raw form into actionable information.
 -   **Explore and visualize**: The final stage is to convert the results of the analysis into a format that is easy to draw insights from and to share with colleagues and peers.
-- ![Data Lifecycle](https://cloud.google.com/architecture/images/data-lifecycle-2.svg)
+![Data Lifecycle](https://cloud.google.com/architecture/images/data-lifecycle-1.svg)
