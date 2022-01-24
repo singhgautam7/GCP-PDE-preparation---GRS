@@ -10,6 +10,7 @@
  - Multi-region or Dual-region also supported
  - Access control can be *uniform* or *fine-grained*
  - Object versioning and retention policy also supported.
+ - A regional Google Cloud Storage is cheaper.
  - Types of storage:
 	 - Standard (accessed frequently)
 	 - Nearline (accessed once a month)
