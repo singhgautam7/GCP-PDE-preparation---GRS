@@ -15,7 +15,7 @@
 	- Unsupervised learning: 
 		- Labels are not provided. 
 		- Find structure within the data
-		- Clustering is unsupervised learning
+		- [Clustering](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/clustering.md) is unsupervised learning
 ```
 GCP ML Solutions
 ├── Pre-Trained Model
