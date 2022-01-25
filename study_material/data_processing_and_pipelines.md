@@ -49,6 +49,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
  - Can store data on disk (HDFS) or can use GCS
  - Google recommends using Cloud Storage instead of HDFS as it is much more cost effective especially when jobs aren’t running.
  - Cloud Dataproc is the better option when migrating and existing Spark/Hadoop cluster to GCP. **New data pipelines should prefer Cloud Dataflow**.
+ - Hadoop/Spark jobs are run on Dataproc, and the **pre-emptible machines cost 80% less**.
  - IAM - 
 	 - Service accounts used with Cloud Dataproc must have Dataproc/Dataproc Worker role (or have all the permissions granted by Dataproc Worker role).
 		 - Need permissions to read and write to Google Cloud Storage, and to write to Google Cloud Logging
