@@ -165,7 +165,9 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 ```
 - Tables here have schema
 - Types of tables - 
-	- Native tables
+	- Native tables: 
+		- **Permanent tables** are those that are created in a dataset and linked to an external source. Dataset-level access controls can be applied to these tables.
+		- **Temporary tables** are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations,  such as loading data into a data warehouse. 
 	- External tables (from external sources, also know as **federated** sources)
 	- Views
 - Jobs are async tasks that work on the top of table
