@@ -166,7 +166,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Tables here have schema
 - Types of tables - 
 	- Native tables
-	- External tables
+	- External tables (from external sources, also know as **federated** sources)
 	- Views
 - Jobs are async tasks that work on the top of table
 - Used for load, query, extract or query data
