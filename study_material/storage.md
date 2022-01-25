@@ -109,7 +109,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Deletions are just specialized mutations.
 - Automatic read-write operations to reorganize the data or to remove deleted items.
 - A Cloud Bigtable instance is mostly just a container for your clusters and nodes, which do all of the real work.
-- When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
+- **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
 - Tables belong to instances, not to clusters or nodes. So if you have an instance with up to 2 clusters, you can't assign tables to individual clusters
 - Security:
 	- Access is given to Bigtable via IAM.
