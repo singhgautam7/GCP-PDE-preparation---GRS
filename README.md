@@ -13,7 +13,9 @@ Even though you can find all the topics inside the `study material` folder, the 
  5. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
  6. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
 
-After the revision, here is a [link](https://quizlet.com/591586946/flashcards) for PDE practice questions dump.
+Link for question banks-
+ - [Question Answer List in Google docs](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk)
+ - [Practice Questions](https://www.passnexam.com/google/google-data-engineer)
 
 ## Exam Topics
 #### Section 1. Designing data processing systems
