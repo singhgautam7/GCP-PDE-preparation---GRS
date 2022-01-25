@@ -97,7 +97,8 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
  - Fully managed *Apache Airflow* in google cloud
  - Helps you create, schedule, monitor and manage workflows
  - Workflows are defined as DAG (Direct Acyclic Graphs) which are written in Python 3.x
- - This also has built-in support for other GCP services like Pub?sub, Cloud Storage, DataFlow, DataProc
+ - This also has built-in support for other GCP services like Pub/sub, Cloud Storage, DataFlow, DataProc
+ - It serves well when orchestrating interdependent pipelines
 
 ## Cloud Functions
 You can refer to [this](https://cloud.google.com/functions/docs) for docs.
