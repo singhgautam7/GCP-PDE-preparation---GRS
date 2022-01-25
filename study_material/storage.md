@@ -26,6 +26,11 @@
 
 ## DataStore
  - NoSQL DB, serverless, highly scalable
+ - AutoScale supported.
+ - High availability of reads and writes.
+ - Fully managed with no planned downtime
+ - It is a fully managed and serverless solution that allows for transactions and will autoscale (storage and compute) without the need to manage any infrastructure
+ - Each transaction is guaranteed to be **atomic**, meaning that transactions are never partially applied. Either all of the operations in the transaction are applied, or none of them are applied.
  - Document kind storage
  - Tightly coupled with app engine, so one project can have jusgt one firestore/datastore
  - GQL (Google Query Language) is used which is similar to SQL
