@@ -27,3 +27,10 @@ GCP ML Solutions
 ├── Custom Training
 │   ├── Tensorflow, PyTorch, Scickit-learn
 ```
+
+## Examples of Pre-Trained Model
+
+### Natural Language API
+- Types of analysis that can be done here - 
+	- **Entity analysis:** Identify entities within documents receipts, invoices, and contracts and label them by types such as date, person, contact information, organization, location, events, products, and media.
+	- **Sentiment analysis:** Understand the overall opinion, feeling, or attitude sentiment expressed in a block of text.
