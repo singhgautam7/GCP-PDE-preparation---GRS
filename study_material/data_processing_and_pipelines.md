@@ -65,6 +65,7 @@ You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
  - Messages are persisted in message store until they are delivered and acknowledged by subscribers
  - When message is ack, it is removed from subscription's message queue
  - The only scenario for real time (in the 4 presented) is the use of pub/sub with push.
+ - If messages exceed the 10MB maximum, they cannot be published.
  - How to Deduplicate: 
 	 - Duplicates can happen when endpoint is not acknowledging messages.
 	 - Maintain a DB to store hash value for each entry.
