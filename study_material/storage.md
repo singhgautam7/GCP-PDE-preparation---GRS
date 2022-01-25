@@ -92,7 +92,8 @@ If you are planning to create a big product or if you want to be ready for a hug
 Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Stored on Google’s internal store Colossus 
 - No transactional support (so can handle petabytes of data)
-- Bigtable is a key/value store, not a relational store. It does not support joins, and transactions are supported only within a single row
+- Bigtable is a key/value store, not a relational store. It does not support joins, and transactions are supported only within a single row.
+- Good option for migrating on-premises Hadoop HBase databases to a managed database because Bigtable has an HBase interface.
 - Each table has only one index, the row key, and each row key must be unique
 	- Best practices of bigtable states that rowkey:
 		- Should not be only timestamp 
