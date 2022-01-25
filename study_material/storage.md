@@ -153,6 +153,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Supports CSV, JSON, Avro, SQL
 - Querying is very expensive here
 - Command line tool = `bq`
+- BigQuery is not suitable for transactional use case
 - Hierarchy - 
 ```
 ├── Project
