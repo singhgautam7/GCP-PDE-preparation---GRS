@@ -142,6 +142,10 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 	- In many cases, you should design row keys that start with a common value and end with a granular value.
 	- Avoid using a single row key to identify a value that must be updated very frequently
 	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order, making it impossible to store rows in a way that are optimal for querying
+- Schema Design
+	- A tall and narrow table has a small number of events per row, which could be just one event, whereas a short and wide table has a large number of events per row.
+	- Narrow and tall table for a single event and good for time-series data because Storing one event per row makes it easier to run queries against your data.
+	- Short and Wide table for data over a month, multiple events.
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
