@@ -126,6 +126,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Empty columns don’t take up any space. Can create large number of columns, even if most columns are empty in most rows
 - Adding more nodes to a cluster (not replication) can improve the write performance
 - Google recommends adding nodes when storage utilization is > 70%
+- BigTable provides lowest latency
 - Creating row keys- 
 	- Design your row key based on the queries you will use to retrieve the data.
 	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows. Otherwise, your query requires a table scan, which is much slower than retrieving specific rows.
