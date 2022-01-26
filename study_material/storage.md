@@ -250,6 +250,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - If searching for objects by attribute value is required, then Datastore is preferred.
 - If high throughput writes of wide column data then Bigtable is preferred.
 - If there is a need of data warehousing then BigQuery is preferred.
+- Bigtable is best suited to the following scenarios: time-series data (e.g. CPU and memory usage over time for multiple servers), financial data (e.g. transaction histories, stock prices, and currency exchange rates), and IoT (Internet of Things) use cases
 
 ![enter image description here](https://juanignaciosl.github.io/img/deogcp-storage.png)
 
