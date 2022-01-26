@@ -35,7 +35,8 @@ TYPES OF ROLES
 	- Trace
 	- Logging
 - **Audit Logs to review data access** (e.g. BigQuery)
-- Application Performance Management (APM) combines the monitoring and troubleshooting capabilities of Cloud Logging and Cloud Monitoring without aggregated sink this will be required to be done for each project individually which will be cumbersome
+- Application Performance Management (APM) combines the monitoring and troubleshooting capabilities of Cloud Logging and Cloud Monitoring without aggregated sink this will be required to be done for each project individually which will be cumbersome.
+- Monitoring does not only provide you with access to Dataflow-related metrics, but also lets you to create alerting policies and dashboards so you can chart time series of metrics and choose to be notified when these metrics reach specified values.
 - Use cases - 
 	- Monitor your infrastructure
 	- Troubleshoot your applications
