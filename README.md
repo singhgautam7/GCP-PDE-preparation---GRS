@@ -15,7 +15,7 @@ Even though you can find all the topics inside the `study material` folder, the 
 
 Link for question banks-
  - [Question List](https://docs.google.com/document/d/1Nz5fVYeOEIdoZKHduR473RFv-z9fbHWNZKxmNvmUDkI/edit) aling with [Answers](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk) in Google Docs
- - [Practice Question Bank] with more than 200 questions(https://www.passnexam.com/google/google-data-engineer)
+ - [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
 
 ## Exam Topics
 #### Section 1. Designing data processing systems
