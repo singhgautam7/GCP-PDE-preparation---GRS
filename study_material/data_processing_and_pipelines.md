@@ -103,6 +103,7 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
  - Workflows are defined as DAG (Direct Acyclic Graphs) which are written in Python 3.x
  - This also has built-in support for other GCP services like Pub/sub, Cloud Storage, DataFlow, DataProc
  - It serves well when orchestrating interdependent pipelines
+ - Cloud Composer should be used when there is inter-dependencies between the job, e.g. we need the output of a job to start another whenever the first finished, and use dependencies coming from first job
 
 ## Cloud Functions
 You can refer to [this](https://cloud.google.com/functions/docs) for docs.
