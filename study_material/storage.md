@@ -158,6 +158,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Querying is very expensive here
 - Command line tool = `bq`
 - BigQuery is not suitable for transactional use case
+- **Append** has better performance than **Update**
 - Hierarchy - 
 ```
 ├── Project
