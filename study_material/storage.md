@@ -78,6 +78,7 @@
 - Lift and Shift not recommended for this.
 - Spanner = SQL + Horizontal Scalability
 - High replication possible
+- We do not have to mention storage. So we do not change number of nodes for increasing or decreasing storage
 
 ## SQL vs Spanner
 Cloud Spanner is used when you need to handle massive amounts of data with an elevated level of consistency and with a big amount of data handling (+100,000 reads/write per second). Spanner gives much better scalability and better SLOs.
@@ -110,8 +111,8 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Deletions are just specialized mutations.
 - Automatic read-write operations to reorganize the data or to remove deleted items.
 - A Cloud Bigtable instance is mostly just a container for your clusters and nodes, which do all of the real work.
-- **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
 - Tables belong to instances, not to clusters or nodes. So if you have an instance with up to 2 clusters, you can't assign tables to individual clusters
+- **For time-series data, BigTable is recommended** as it is highly scalable.
 - Security:
 	- Access is given to Bigtable via IAM.
 	- Can manage security at project, instance and table levels
@@ -176,8 +177,8 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Types of tables - 
 	- Native tables: 
 		- **Permanent tables** are those that are created in a dataset and linked to an external source. Dataset-level access controls can be applied to these tables.
-		- **Temporary tables** are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations,  such as loading data into a data warehouse. 
-	- External tables (from external sources, also know as **federated** sources)
+		- **Temporary tables** are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations or caching,  such as loading data into a data warehouse. It is not sharable. 
+	- External tables (from external sources, also know as **federated** sources). It is recommended when data doesn't change much often, or when tables are small.
 	- Views
 - Jobs are async tasks that work on the top of table
 - Used for load, query, extract or query data
@@ -192,8 +193,12 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Authorized views allows to share query results without giving access to the underlying data
 - Caching time = 24 hrs
 - No prices from data fetched from cache.
+- Can directly run query on cloud storage. No need for dataflow.
+- BQ is optimised for reads
+- Streaming IP is payable
 - Wildcard tables - Used if you want to union all similar tables with similar names. ’*’ (e.g. project.dataset.Table*)
-- Partitioning in BigQuery : Dividing a table into segments to make it easier to manage and query data. This saves cost and time. Partition is nothing but a newly created table.
+- **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
+- Partitioning in BigQuery : Dividing a table into segments to make it easier to manage and query data. This saves cost and time. Partition is nothing but a newly created table. You can partition on hourly or daily. 
 	- Time Unit Column Partition - Based on timestamp, date or datetime col in a table. Special partitions are `__NULL__`(contains rows with null values in partitioning column) and `__UNPARTITIONED__`(value of partitioning column not in partitioning range)
 	- Ingestion Time Partition - Partitioned by the time row was ingested in a table.
 	- Integer Range Partition - Based on integer col of the table. Here we specify col name, start value, end value and interval. `__NULL__` and `__UNPARTITIONED__` are also created in this.
@@ -203,8 +208,8 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Data Import -
 	- Batch import - web console (local files), GCS, GDS
 	- Stream - data with CDF, Cloud logging or POST calls
-	- Raw files - federated data source, CSV/JSON/Avro on GCS, Google sheets
-	- By default, the BigQuery service expects all source data to be UTF-8 encoded
+	- Raw files - federated data source, CSV/JSON/Avro on GCS, Google sheets. Default file format is csv
+	- By default, the BigQuery service expects all source data to be UTF-8 encoded. BQ also supports ISO-8859-1
 	- To support (occasionally) schema changing we can use 'Automatically detect' for schema changes. Automatically detect is not default selected
 - Data Export - 
 	- Data can only be exported in JSON / CSV / Avro
