@@ -65,7 +65,7 @@ You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
  - Async processing
  - Messages are persisted in message store until they are delivered and acknowledged by subscribers
  - When message is ack, it is removed from subscription's message queue
- - The only scenario for real time (in the 4 presented) is the use of pub/sub with push.
+ - The only scenario for real time is the use of pub/sub with push.
  - If messages exceed the 10MB maximum, they cannot be published.
  - If in exam it is writtern: "Delivery of confimed atleast 1 message" or "message must be delivered/processed atleast once" then go with the Pub/Sub option.
  - Pub sub can retain message only for 7 days maximum
