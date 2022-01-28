@@ -79,6 +79,9 @@
 - Spanner = SQL + Horizontal Scalability
 - High replication possible
 - We do not have to mention storage. So we do not change number of nodes for increasing or decreasing storage
+- **Secondary Index** -
+	- In a Cloud Spanner database, Cloud Spanner automatically creates an index for each table's primary key. For example, you don't need to do anything to index the primary key of Singers, because it's automatically indexed for you.
+	- You can also create secondary indexes for other columns. Adding a secondary index on a column makes it more efficient to look up data in that column. For example, if you need to quickly look up a set of SingerId values for a given range of LastName values, you should create a secondary index on LastName, so Cloud Spanner does not need to scan the entire table.
 
 ## SQL vs Spanner
 Cloud Spanner is used when you need to handle massive amounts of data with an elevated level of consistency and with a big amount of data handling (+100,000 reads/write per second). Spanner gives much better scalability and better SLOs.
