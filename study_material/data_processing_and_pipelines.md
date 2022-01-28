@@ -114,3 +114,4 @@ You can refer to [this](https://cloud.google.com/functions/docs) for docs.
 
 ## DataProc vs DataFlow vs DataPrep
 ![enter image description here](https://cloud.google.com/architecture/images/data-lifecycle-4.svg)
+
