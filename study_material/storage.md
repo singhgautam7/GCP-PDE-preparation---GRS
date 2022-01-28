@@ -37,6 +37,7 @@
  - Support ACID (Atomicity, Consistency, Isolation, Durability) transactions
  - Replication across different regions is possible
  - Export is only available with gcloud utility only.
+ - Data exported from one Datastore mode database can be imported into another Datastore mode database, **even one in another project**
 
 |DataStore|RDBMS|
 |:-:|:-:|
