@@ -60,6 +60,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
 
 ## Pub/Sub
 You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
+ - Replacement for **Kafka**
  - Serverless messaging
  - Order of message not guaranteed
  - Async processing
