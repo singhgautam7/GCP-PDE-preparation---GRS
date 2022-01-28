@@ -53,7 +53,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
  - Hadoop/Spark jobs are run on Dataproc, and the **pre-emptible machines cost 80% less**.
  - Dataproc **Graceful Decommissioning** incorporates Graceful Decommission of YARN Nodes to finish work in progress on a worker before it is removed from the Cloud Dataproc cluster. By default this is disabled. 
 	- This make sures that the work in progress is not lost while scaling.
- - If you create a Dataproc cluster with internal IP addresses only, attempts to access the Internet in an initialization action will fail unless you have configured routes to direct the traffic through a NAT or a VPN gateway. Without access to the Internet, you can enable Private Google Access, and place job dependencies in Cloud Storage; cluster nodes can download the dependencies from Cloud Storage from internal IPs.
+ - If you create a Dataproc cluster with internal IP addresses only, attempts to access the Internet in an initialization action will fail unless you have configured routes to direct the traffic through a NAT or a VPN gateway. Without access to the Internet, you can enable Private Google Access, and **place job dependencies in Cloud Storage**; cluster nodes can download the dependencies from Cloud Storage from internal IPs.
  - IAM - 
 	 - Service accounts used with Cloud Dataproc must have Dataproc/Dataproc Worker role (or have all the permissions granted by Dataproc Worker role).
 		 - Need permissions to read and write to Google Cloud Storage, and to write to Google Cloud Logging
