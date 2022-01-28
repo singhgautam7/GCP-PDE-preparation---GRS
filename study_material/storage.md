@@ -131,6 +131,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Adding more nodes to a cluster (not replication) can improve the write performance
 - Google recommends adding nodes when storage utilization is > 70%
 - BigTable provides lowest latency
+- Multi-cluster routing is beneficial in cases where high availability is needed
 - Creating row keys- 
 	- Design your row key based on the queries you will use to retrieve the data.
 	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows. Otherwise, your query requires a table scan, which is much slower than retrieving specific rows.
