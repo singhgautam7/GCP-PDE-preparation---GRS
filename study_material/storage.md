@@ -95,17 +95,17 @@ If you are planning to create a big product or if you want to be ready for a hug
 
 ## Bigtable
 Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
-- Stored on Google’s internal store Colossus 
+- A managed service.
 - No transactional support (so can handle petabytes of data)
-- Bigtable is a key/value store, not a relational store. It does not support joins, and transactions are supported only within a single row.
-- Good option for migrating on-premises Hadoop HBase databases to a managed database because Bigtable has an HBase interface.
-- Each table has only one index, the row key, and each row key must be unique
-	- Best practices of bigtable states that rowkey:
-		- Should not be only timestamp 
-		- Should not have timestamp at starting.
-- Bigtable tables are sparse. A column doesn't take up any space in a row that doesn't use the column
+- Bigtable is a key/value store, not a relational store. 
+- It does not support joins, and transactions are supported only within a single row.
+- HBase and Cassandra are similar wide-column databases.
+- Supports HBase API
+- Bigtable tables are **sparse**. A column doesn't take up any space in a row that doesn't use the column
 - Data Replication: Replications is copying data across multiple regions to increase durability. Just add another cluster and it will be possible to replicate the data.
-- No downtime for cluster resize
+- No downtime for cluster resize.
+- Clusters can be configured on number of nodes, SSD or HDD, Regional or Zone etc.
+- Scales linearly. Increasing no. of nodes increases performance.
 - Useful for: 
 	- IOT data
 	- Financial data
@@ -116,7 +116,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Automatic read-write operations to reorganize the data or to remove deleted items.
 - A Cloud Bigtable instance is mostly just a container for your clusters and nodes, which do all of the real work.
 - Tables belong to instances, not to clusters or nodes. So if you have an instance with up to 2 clusters, you can't assign tables to individual clusters
-- **For time-series data, BigTable is recommended** as it is highly scalable.
+- For time-series data, financial data or IOT data, **BigTable is recommended** as it is highly scalable.
 - Security:
 	- Access is given to Bigtable via IAM.
 	- Can manage security at project, instance and table levels
@@ -133,25 +133,19 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Google recommends adding nodes when storage utilization is > 70%
 - BigTable provides lowest latency
 - Multi-cluster routing is beneficial in cases where high availability is needed
+- Each table has only one index, the row key, and each row key must be unique
+	- Best practices of bigtable states that rowkey:
+		- Should not be only timestamp 
+		- Should not have timestamp at starting.
 - Creating row keys- 
 	- Design your row key based on the queries you will use to retrieve the data.
-	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows. Otherwise, your query requires a table scan, which is much slower than retrieving specific rows.
-	- For example, if your application tracks mobile device data, you can have a row key that consists of device type, device ID, and the day the data is recorded. Row keys for this data might look like this:
-		- `phone#4c410523#20200501`
-		- `phone#4c410523#20200502`
-		- `tablet#a0b81f74#20200501`
-		- `tablet#a0b81f74#20200502`
-	- This row key design lets you retrieve data with a single request for:
-		- A device type
-		- A combination of device type and device ID
-	- This row key design would not be optimal if you want to retrieve all data for a given day. Because the day is stored in the third segment, or the row key suffix, you cannot just request a range of rows based on the suffix or a middle segment of the row key.
-	- In many cases, you should design row keys that start with a common value and end with a granular value.
+	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows.
 	- Avoid using a single row key to identify a value that must be updated very frequently
-	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order, making it impossible to store rows in a way that are optimal for querying
+	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order
 - Schema Design
 	- A tall and narrow table has a small number of events per row, which could be just one event, whereas a short and wide table has a large number of events per row.
-	- Narrow and tall table for a single event and good for time-series data because Storing one event per row makes it easier to run queries against your data.
-	- Short and Wide table for data over a month, multiple events.
+	- Narrow and tall table : storing one event per row; makes it easier to run queries the data.
+	- Short and Wide table : for data over a month, multiple events.
 
 ## BigQuery
 Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for doc.
@@ -165,7 +159,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Columnar storage
 - Not for transactional purposes
 - Can also query from external data sources like SQL, Bigtable
-- Supports CSV, JSON, Avro, SQL
+- Supports CSV, JSON, Avro, SQL, Parquet
 - Querying is very expensive here
 - Command line tool = `bq`
 - BigQuery is not suitable for transactional use case
@@ -203,10 +197,14 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Streaming IP is payable
 - Wildcard tables - Used if you want to union all similar tables with similar names. ’*’ (e.g. project.dataset.Table*)
 - **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
-- Partitioning in BigQuery : Dividing a table into segments to make it easier to manage and query data. This saves cost and time. Partition is nothing but a newly created table. You can partition on hourly or daily. 
-	- Time Unit Column Partition - Based on timestamp, date or datetime col in a table. Special partitions are `__NULL__`(contains rows with null values in partitioning column) and `__UNPARTITIONED__`(value of partitioning column not in partitioning range)
-	- Ingestion Time Partition - Partitioned by the time row was ingested in a table.
-	- Integer Range Partition - Based on integer col of the table. Here we specify col name, start value, end value and interval. `__NULL__` and `__UNPARTITIONED__` are also created in this.
+- Partitioning: 
+	- Dividing a table into segments to make it easier to manage and query data. This saves cost and time. 
+	- Partition is nothing but a newly created table. 
+	- You can partition on hourly or daily.
+- Clustering:
+	- Data in clustered tables are sorted based on values in one or more columns
+	- Can be applied after partitioning. Unpartitioned tables cannot be clusered.
+	- Clustered tables can improve performance of aggregate queries.
 - Types of queries - 
 	- Interactive: query is executed immediately
 	- Batch: Batches of queries are queued and the query starts when idle resources are available
