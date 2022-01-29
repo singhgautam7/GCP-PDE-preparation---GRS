@@ -29,6 +29,8 @@
 - **Precision**: The positive predictive value how many times it correctly predicted a thing as its classification (eg cat)
 - **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
 
+# Common Facts for examination
+
 ### Clustering
 It is unsupervised learning technique for identifying group of similar entities
 
@@ -57,3 +59,7 @@ Limiting the information captured by model to prevent overfitting.
 ### High Bias
 - Occurs when relationships are missed.
 - Low bias is desired
+
+### Learning rate
+- Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
+- Decreasing the learning rate = Slow learning
