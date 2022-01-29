@@ -1,6 +1,6 @@
 # Google Professional Data Engineering(PDE) Certification Exam Preparation Guide
 
-This guide is created for the preparation/revision for the Google Professional Data Engineering certification exam. 
+This guide is created for the preparation/revision for the [Google Professional Data Engineering certification exam](https://cloud.google.com/certification/data-engineer). 
 I have tried to divide the topics into sections for better understanding and topic-specific revisions.
 
 ## Contents
