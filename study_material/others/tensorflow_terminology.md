@@ -29,7 +29,7 @@
 - **Precision**: The positive predictive value how many times it correctly predicted a thing as its classification (eg cat)
 - **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
 
-# Common Facts for examination
+# Common Facts/Terminologies for examination
 
 ### Clustering
 It is unsupervised learning technique for identifying group of similar entities
@@ -63,3 +63,11 @@ Limiting the information captured by model to prevent overfitting.
 ### Learning rate
 - Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
 - Decreasing the learning rate = Slow learning
+
+### Example of Features and Labels
+|Features|Labels|
+|--|:-:|
+|No. of rooms, no. of bedrooms, size of kitchen, zip code etc.|Selling Price|
+|Petal length, petal widh, sepal length, sepal width|Flower Species|
+|Amount, product purchased, time of day, location|Fraud/Not Fraud|
+|Age, occupation, zip code, no. of years of education|Income|
