@@ -47,10 +47,11 @@ TYPES OF ROLES
 ### Cloud Logging
 - Stores log for 30 days
 - Bigtable is not a sink option here.
+- There is no way to create an alert on Cloud Logging not receiving data from a service
 ### Cloud Monitoring
 - Create dashboards and visualizations
 - Collect metrics from GCP, AWS and hybrid resources
-- Alerting and Anamoly reporting
+- **Alerting** and Anamoly reporting
 
 ## Cloud Deployment Manager
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
