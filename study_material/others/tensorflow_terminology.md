@@ -49,3 +49,11 @@ Limiting the information captured by model to prevent overfitting.
 ### Underfitting
 - When the model performs poorly on the input data but great on the test data. 
 - Insufficiently complex models can lead to underfitting.
+
+### High Variance
+ - Small changes in a few features leads to large differences in the output.
+ - Low variance is desired
+
+### High Bias
+- Occurs when relationships are missed.
+- Low bias is desired
