@@ -8,8 +8,6 @@
 -   **Weights / biases** — Weights are values that the input features are multiplied by to predict an output value. Biases are the value of the output given a weight of 0.
 -   **Converge —** An algorithm that converges will eventually reach the optimal answer, even if very slowly. An algorithm that doesn’t converge may never reach the optimal answer.
 -   **Learning rate**  — How quickly the optimizers changes weights and biases. Generally a high learning rate trains faster but risks not converging, whereas a lower rate trains slower
--   **Overfitting —** When the model performs great on the input data but poorly on the test data
--   **Underfitting —** When the model performs poorly on the input data but great on the test data
 -   **Bias/Variance —** How much the output is determined by the features. more variance often can mean overfitting, more bias can mean a bad model
 -   **Regularization**  — Variety of approaches to reduce overfitting, including adding the weights to the loss function, randomly dropping layers (dropout).
 -   **Epochs** — How many times you run the optimization over the training data
@@ -43,3 +41,11 @@ Ex: A grade for marks 80 - 100, B grade 60 - 79 and so on
 
 ### Regularization
 Limiting the information captured by model to prevent overfitting.
+
+### Overfitting
+- When the model performs great on the input data but poorly on the test data
+- Sufficient complex models can lead to overfitting
+
+### Underfitting
+- When the model performs poorly on the input data but great on the test data. 
+- Insufficiently complex models can lead to underfitting.
