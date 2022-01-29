@@ -44,6 +44,13 @@ TYPES OF ROLES
 	- Latency management
 	- Debugging by inspecting the state of your application at any code location in production without stopping or slowing down your requests
 	- Security Management - provides near real-time user activity visibility across Google Cloud
+### Cloud Logging
+- Stores log for 30 days
+- Bigtable is not a sink option here.
+### Cloud Monitoring
+- Create dashboards and visualizations
+- Collect metrics from GCP, AWS and hybrid resources
+- Alerting and Anamoly reporting
 
 ## Cloud Deployment Manager
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
