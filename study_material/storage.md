@@ -39,6 +39,7 @@
  - Replication across different regions is possible
  - Export is only available with gcloud utility only.
  - Data exported from one Datastore mode database can be imported into another Datastore mode database, **even one in another project**
+ - Cloud Datastore only retrieves results using indexes, it does not scan entities checking filter conditions.
 
 |DataStore|RDBMS|
 |:-:|:-:|
