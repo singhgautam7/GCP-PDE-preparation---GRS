@@ -24,7 +24,7 @@ TYPES OF ROLES
 │   ├── Combined collection of permissions
 ```
 
-## Stackdriver - 
+## Stackdriver
 [Link](https://cloud.google.com/products/operations) to docs
 - Now know as *Google Cloud's operations suite*
 - For storing, searching, analyzing, monitoring, and alerts on log data and events.
