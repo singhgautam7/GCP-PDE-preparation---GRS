@@ -41,3 +41,27 @@ GCP ML Solutions
 - Services for sight, language and structured data
 - AutoML tables uses structured data to build rgeression and classification models
 
+# Deployment
+
+## AI Platform
+- Serverless GCP option
+- Used to train and deploy ML models
+
+## Cloud DataProc
+- Spark includes MLlib
+- Supports : 
+	- Basic stastics
+	- Classification
+	- Regression
+	- Clustering
+	- Dimension Reduction
+	- Collaborative Filtering
+
+## Self-managed Deployements
+### Compute Engine
+- Deploy model to VM as a service
+- [GPU and TPU](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others/definitions) available
+### Kubernetes Engine
+- Deploy model withing a container
+- Cloud run alternative for container
+- [GPU and TPU](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others/definitions) available
