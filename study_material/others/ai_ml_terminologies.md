@@ -47,10 +47,15 @@ Limiting the information captured by model to prevent overfitting.
 ### Overfitting
 - When the model performs great on the input data but poorly on the test data
 - Sufficient complex models can lead to overfitting
+- Correction for overfitting: 
+        - Regularization, which limits the amount of data captured.
 
 ### Underfitting
 - When the model performs poorly on the input data but great on the test data. 
 - Insufficiently complex models can lead to underfitting.
+- Correction for underfitting: 
+        - Increase the complexity of model. Ex: Increase the number of layers in deep learning.
+        - Increase the training time, epochs
 
 ### High Variance
  - Small changes in a few features leads to large differences in the output.
@@ -59,6 +64,7 @@ Limiting the information captured by model to prevent overfitting.
 ### High Bias
 - Occurs when relationships are missed.
 - Low bias is desired
+- Happens when we do not generalize the training data enough 
 
 ### Learning rate
 - Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
