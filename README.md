@@ -9,7 +9,7 @@ Even though you can find all the topics inside the `study material` folder, the 
 	 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
  3. [Data Processing and Pipelines](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md)
  4. [Machine Learning in GCP](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/ai_ml.md)
-	 - [Tensor flow terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/tensorflow_terminology.md)
+	 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
  5. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
  6. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
 
