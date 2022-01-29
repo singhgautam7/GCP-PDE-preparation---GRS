@@ -3,6 +3,7 @@
 This guide is created for the preparation/revision for the Google Professional Data Engineering certification exam. 
 I have tried to divide the topics into sections for better understanding and topic-specific revisions.
 
+## Contents
 Even though you can find all the topics inside the `study material` folder, the suggested sequence for studying is as follows:
  1. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
  2. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
@@ -13,7 +14,8 @@ Even though you can find all the topics inside the `study material` folder, the 
  5. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
  6. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
 
-Important links with questions-
+## Important Links
  - [Question List](https://docs.google.com/document/d/1Nz5fVYeOEIdoZKHduR473RFv-z9fbHWNZKxmNvmUDkI/edit) aling with [Answers](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk) in Google Docs
  - [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
+ 	- Note: Even though the answers are mentioned here, some of the answers might be wrong. So Google the questions or discuss it with peers to be 100% sure of the right answer. 
  - [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on how to solve the questions in PDE
