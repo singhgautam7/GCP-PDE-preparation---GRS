@@ -4,7 +4,7 @@ This guide is created for the preparation/revision for the Google Professional D
 I have tried to divide the topics into sections for better understanding and topic-specific revisions.
 
 ## Contents
-Even though you can find all the topics inside the `study material` folder, the suggested sequence for studying is as follows:
+Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
  2. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
 	 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
