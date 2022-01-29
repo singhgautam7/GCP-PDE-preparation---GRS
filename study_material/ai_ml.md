@@ -65,3 +65,13 @@ Manipulation of features to improve the quality and predictive capabilities of m
 - Each postion in array represent a possible value
 - Ex: Red represent 100, Blue represent 010 and Green represent 001. Here we mapped colors to three different binary arrays
 
+# Model Building
+```mermaid
+graph LR
+A(Training Data) -- ML Algorithm --> B[Model]
+B --> C(Validation Data)
+C --> D(Tuning the Model)
+D --> A
+D --> E(Test Data)
+```
+
