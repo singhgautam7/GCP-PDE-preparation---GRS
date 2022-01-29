@@ -41,5 +41,5 @@ It is a transform that scales numeric value to the range 0 to 1
 It is used to convert a feature binto multiple binary features that is typically based on a value range.
 Ex: A grade for marks 80 - 100, B grade 60 - 79 and so on
 
-# Regularization
+### Regularization
 Limiting the information captured by model to prevent overfitting.
