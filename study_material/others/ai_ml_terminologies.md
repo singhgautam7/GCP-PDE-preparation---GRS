@@ -29,6 +29,36 @@
 - **Precision**: The positive predictive value how many times it correctly predicted a thing as its classification (eg cat)
 - **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
 
+# Neural Networks and Deep Learning
+
+## Feature engineering
+To learn more about features, click [here](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
+### Definition
+Manipulation of features to improve the quality and predictive capabilities of machine learning models. This is known as feature engineering.
+### Steps
+- Identify useful features
+- Features may be in original data but might need some transformations
+- Features derived from other features.
+### Ways to engineering features
+- Transform the orginal features
+	- Ex: Lower case words and remove punctuation
+	- Map Numeric valriable to a scale of 0 to 1 if the different features are from different numeric range (**Normalization**)
+- Bucketing
+	- Create sub-groups of feature values
+	- This reduces number of values
+- Feature cross	
+	- Cartesian product of two or more features
+	- Helps when there are non-linear relationships
+- Binary features
+	- Ex: is_red, is_blue etc
+- Decompose values to parts
+	- Ex: From date extract year, month and day
+
+## One-Hot Encoding
+- Map from an attribute value to a single bit in a binary array
+- Each postion in array represent a possible value
+- Ex: Red represent 100, Blue represent 010 and Green represent 001. Here we mapped colors to three different binary arrays
+
 # Common Facts/Terminologies for examination
 
 ### Clustering
@@ -84,34 +114,3 @@ Limiting the information captured by model to prevent overfitting.
 |Petal length, petal widh, sepal length, sepal width|Flower Species|
 |Amount, product purchased, time of day, location|Fraud/Not Fraud|
 |Age, occupation, zip code, no. of years of education|Income|
-
-
-# Neural Networks and Deep Learning
-
-## Feature engineering
-To learn more about features, click [here](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
-### Definition
-Manipulation of features to improve the quality and predictive capabilities of machine learning models. This is known as feature engineering.
-### Steps
-- Identify useful features
-- Features may be in original data but might need some transformations
-- Features derived from other features.
-### Ways to engineering features
-- Transform the orginal features
-	- Ex: Lower case words and remove punctuation
-	- Map Numeric valriable to a scale of 0 to 1 if the different features are from different numeric range (**Normalization**)
-- Bucketing
-	- Create sub-groups of feature values
-	- This reduces number of values
-- Feature cross	
-	- Cartesian product of two or more features
-	- Helps when there are non-linear relationships
-- Binary features
-	- Ex: is_red, is_blue etc
-- Decompose values to parts
-	- Ex: From date extract year, month and day
-
-## One-Hot Encoding
-- Map from an attribute value to a single bit in a binary array
-- Each postion in array represent a possible value
-- Ex: Red represent 100, Blue represent 010 and Green represent 001. Here we mapped colors to three different binary arrays
