@@ -64,6 +64,13 @@ Limiting the information captured by model to prevent overfitting.
 - Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
 - Decreasing the learning rate = Slow learning
 
+### Difference between of Features and Labels
+|Features|Labels|
+|--|--|
+|Attribute of an entity|Attribute that is predicted|
+|Describe characteristics of an entity|Category of an entity|
+|Acts as I/P variable|Acts as O/P|
+
 ### Example of Features and Labels
 |Features|Labels|
 |--|:-:|
