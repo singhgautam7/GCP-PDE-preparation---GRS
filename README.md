@@ -16,4 +16,4 @@ Even though you can find all the topics inside the `study material` folder, the 
 Important links with questions-
  - [Question List](https://docs.google.com/document/d/1Nz5fVYeOEIdoZKHduR473RFv-z9fbHWNZKxmNvmUDkI/edit) aling with [Answers](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk) in Google Docs
  - [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
- - [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on How to solve the questions in PDE
+ - [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on how to solve the questions in PDE
