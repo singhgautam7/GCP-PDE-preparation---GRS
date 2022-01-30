@@ -30,6 +30,8 @@
 - **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
 
 # Neural Networks and Deep Learning
+- Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.
+- Weights and Biases are adjusted by a neural network as it learns from a training dataset
 
 ## Feature engineering
 To learn more about features, click [here](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
