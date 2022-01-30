@@ -28,6 +28,7 @@
 - **Feature Engineering**: The process of building a set of feature combinations to act on inputs
 - **Precision**: The positive predictive value how many times it correctly predicted a thing as its classification (eg cat)
 - **Recall**: The true positive rate, How many times a think is in the class (the actual number of cats)
+- **Sparse Vector**: Sparse vector contains only 0 and 1, whereas only one 1
 
 # Neural Networks and Deep Learning
 - Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.
