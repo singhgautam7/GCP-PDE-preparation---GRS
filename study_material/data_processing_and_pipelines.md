@@ -58,6 +58,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
 	 - Single Node (1 master, 0 workers)
 	 - High Availability (3 master, N workers)
  - Worker node can be a regular VM or a Preemptible VM.
+ - No. of master nodes cannot be changed.
  - Job Supported - Hadoop, SparkR, Spark, SparkSQL, Hive, Pig, PySpark
  - Can store data on disk (HDFS) or can use GCS
  - Google recommends using Cloud Storage instead of HDFS as it is much more cost effective especially when jobs aren’t running.
