@@ -207,6 +207,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - You can load data into BigQuery via two options: batch loading (free) and streaming (costly).
 - When using the Cloud Console, files loaded from a local data source cannot exceed 10 MB.
 - BigQuery tables can act as data sink in both batch and streaming mode
+- BigQuery maintains a seven-day history of changes so that you can query a point-intime snapshot of data
 - Wildcard tables - Used if you want to union all similar tables with similar names. ’*’ (e.g. project.dataset.Table*)
 - **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
 - Partitioning: 
