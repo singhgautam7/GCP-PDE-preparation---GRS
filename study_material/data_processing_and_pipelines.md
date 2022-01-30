@@ -10,6 +10,7 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Multi-Step processing data. Eg: Wordcount.
  - Cloud dataflow executed as jobs where one or more worker carry out specific tasks
  - Supports SQL, Java, Python
+ - When you run a job on Cloud Dataflow, it spins up a cluster of virtual machines, distributes the tasks in your job to the VMs, and dynamically scales the cluster based on how the job is performing.
  - Stackdriver integration for logging and monitoring
  - Used for data processing, ELT(Extract Transform Load), filter, group for data sets.
  - Can read data from multiple sources, can kick off multiple cloud functions in parallel and can also writer to multiple sinks (like BigQuery, BigTable etc.)
@@ -52,6 +53,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
  - Provides access to Hadoop cluster on GCP and Hadoop-ecosystem tools (Pig, Hive, and Spark).
  - Lift and Shift existing Spark/Hadoop jobs is possible
  - Automated cluster management
+ - Dataproc automation helps you create clusters quickly, manage them easily, and save money by turning clusters off when not needed
  - Cluster types - 
 	 - Standard (1 master, N workers)
 	 - Single Node (1 master, 0 workers)
@@ -65,6 +67,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
  - Dataproc **Graceful Decommissioning** incorporates Graceful Decommission of YARN Nodes to finish work in progress on a worker before it is removed from the Cloud Dataproc cluster. By default this is disabled. 
 	- This make sures that the work in progress is not lost while scaling.
  - If you create a Dataproc cluster with internal IP addresses only, attempts to access the Internet in an initialization action will fail unless you have configured routes to direct the traffic through a NAT or a VPN gateway. Without access to the Internet, you can enable Private Google Access, and **place job dependencies in Cloud Storage**; cluster nodes can download the dependencies from Cloud Storage from internal IPs.
+ - Outputs can be automatically pushed to big query, big table, or gcs
  - IAM - 
 	 - Service accounts used with Cloud Dataproc must have Dataproc/Dataproc Worker role (or have all the permissions granted by Dataproc Worker role).
 		 - Need permissions to read and write to Google Cloud Storage, and to write to Google Cloud Logging
