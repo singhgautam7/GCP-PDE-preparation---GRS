@@ -84,6 +84,9 @@
 - Spanner = SQL + Horizontal Scalability
 - High replication possible
 - We do not have to mention storage. So we do not change number of nodes for increasing or decreasing storage
+- Each node can store upto 2TB
+- 65% is the recommended CPU utilization for a regional instance Cloud Spanner instance
+- 45% is the recommended CPU utilization for a multi-regional Cloud Spanner instance
 - **Hotspotting** - 
 	-  Hot spotting can occur when sequential values are used as primary keys
 	-  Introduce more variation in the sort order of primary keys generated in close proximity 
