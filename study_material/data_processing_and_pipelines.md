@@ -42,6 +42,8 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
 	 - Time based triggers
 	 - Data Driven triggers
 	 - Composite triggers
+- **ParDo**: It is a parallel processing function which can transform elements of an input PCollection to an output PCollection.
+- **DoFn**: It is a template which is used to create user defined functions that are referenced by ParDo
 
 </p>
 </details>
