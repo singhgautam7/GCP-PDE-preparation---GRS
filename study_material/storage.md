@@ -144,6 +144,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows.
 	- Avoid using a single row key to identify a value that must be updated very frequently
 	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order
+	- Keep your row keys reasonably short
 - Schema Design
 	- A tall and narrow table has a small number of events per row, which could be just one event, whereas a short and wide table has a large number of events per row.
 	- Narrow and tall table : storing one event per row; makes it easier to run queries the data.
