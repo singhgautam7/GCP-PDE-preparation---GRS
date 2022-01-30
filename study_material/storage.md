@@ -133,6 +133,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - BigTable provides lowest latency
 - It is not a good solution for less than 1 TB of data.
 - Multi-cluster routing is beneficial in cases where high availability is needed
+- Field promotion avoids hotspotting
 - Each table has only one index, the row key, and each row key must be unique
 	- Best practices of bigtable states that rowkey:
 		- Should not be only timestamp 
