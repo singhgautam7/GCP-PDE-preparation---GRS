@@ -38,6 +38,21 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Important IAM roles - 
 	 - **dataflow.developer** role enable the developer interacting with the Cloud Dataflow job , with data privacy. 
 	 - **dataflow.worker** role provides the permissions necessary for a *Compute Engine service account* to execute work units for a Dataflow pipeline
+ <details><summary>Common Concepts</summary>
+<p>
+
+- **Pipeline**: encapsulates series of computations that accepts input data from external sources, transforms data to provide some useful intelligence, and produce output
+- **PCollections**: abstraction that represents a potentially distributed, multi-element data set, that acts as the pipeline’s data. PCollection objects represent input, intermediate, and output data. The edges of the pipeline.
+- **Transforms**: operations in pipeline. A transform takes a PCollection(s) as input, performs an operation that you specify on each element in that collection, and produces a new output PCollection. Composite transforms are multiple transforms: combining, mapping, shuffling, reducing, or statistical analysis.
+- **Pipeline I/O**: the source/sink, where the data flows in and out. Supports read and write transforms for a number of common data storage types, as well as custom.
+- **Windowing**: Windowing a PCollection divides the elements into windows based on the associated event time for each element.
+- **Triggers**: Allows specifying a trigger to control when (in processing time) results for the given window can be produced. Triggers determines when a Window's contents should be output based on certain criteria being met. Types of triggers are :  
+	 - Time based triggers
+	 - Data Driven triggers
+	 - Composite triggers
+
+</p>
+</details>
 
 ## DataProc
 You can refer to [this](https://cloud.google.com/dataproc/) for docs.
