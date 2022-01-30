@@ -53,6 +53,7 @@
  - It is next gen datastore
  - Collection and document model used
  - Native mode = Firestore mode
+ - Having more indexes will lead to greater storage sizes
 
 |FireStore|RDBMS|
 |:-:|:-:|
