@@ -83,15 +83,15 @@ You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
 <details><summary>Use Cases of PubSub</summary>
 <p>
 
-- Gather events from many clients simultaneously and use stream processing (like dataflow to deliver it to BigQuery, BigTable, CloudStorage on other DBs.
-- Replicating data among DBs
-- Parallel processing by Pub/Sub messages to connect to cloud functions.
-- Data streaming for  various processes or devices(ex- IOT devices).
-- Cache invalidation for distributed cashes by publishing events, i.e. refreshing caches.
-- Load balancing for reliability.
-- Implementing asynchronous workflows.
-- Distributing event notifications.
-- Logging to multiple systems.
+1. Gather events from many clients simultaneously and use stream processing (like dataflow to deliver it to BigQuery, BigTable, CloudStorage on other DBs.
+2. Replicating data among DBs
+3. Parallel processing by Pub/Sub messages to connect to cloud functions.
+4. Data streaming for  various processes or devices(ex- IOT devices).
+5. Cache invalidation for distributed cashes by publishing events, i.e. refreshing caches.
+6. Load balancing for reliability.
+7. Implementing asynchronous workflows.
+8. Distributing event notifications.
+9. Logging to multiple systems.
 
 </p>
 </details>
