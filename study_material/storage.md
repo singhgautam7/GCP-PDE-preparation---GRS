@@ -134,6 +134,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - It is not a good solution for less than 1 TB of data.
 - Multi-cluster routing is beneficial in cases where high availability is needed
 - Field promotion avoids hotspotting
+- It is recommended to create your Compute Engine instance in the same zone as your Cloud Bigtable instance for the best possible performance. If it's not possible to create a instance in the same zone, you should create your instance in another zone within the same region
 - Each table has only one index, the row key, and each row key must be unique
 	- Best practices of bigtable states that rowkey:
 		- Should not be only timestamp 
