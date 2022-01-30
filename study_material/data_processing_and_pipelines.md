@@ -78,7 +78,7 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
 |Batch processing (ETL)| Yes | Yes |
 |Iterative processing and notebooks| Yes | No |
 |Machine learning with Spark ML| Yes | No |
-|Machine learning with Spark ML| No | Yes |
+|Preprocessing for Machine learning| No | Yes |
 
 ## Pub/Sub
 You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
