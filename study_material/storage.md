@@ -273,6 +273,19 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 </p>
 </details>
 
+<details><summary>Pricing in BigQuery</summary>
+<p>
+
+BigQuery offers a choice of two pricing models for running queries - 
+1. **On-demand pricing**: With this pricing model, you are **charged for the number of bytes processed** by each query. The first 1 TB of query data processed per month is free.
+2. **Flat-rate pricing**. With this pricing model, you purchase slots, which are** virtual CPUs**. When you buy slots, you are buying dedicated processing capacity that you can use to run queries. Slots are available in the following commitment plans:
+	- _Flex slots_: You commit to an initial 60 seconds.
+	- _Monthly_: You commit to an initial 30 days.
+	- _Annual_: You commit to 365 days.
+	
+</p>
+</details>
+
 - [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
 - [Link](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns) for Best practices for performance
 
