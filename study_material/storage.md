@@ -54,6 +54,7 @@
  - Collection and document model used
  - Native mode = Firestore mode
  - Having more indexes will lead to greater storage sizes
+ - Good replacement for MongoDB
 
 |FireStore|RDBMS|
 |:-:|:-:|
