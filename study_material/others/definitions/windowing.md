@@ -14,6 +14,8 @@
         - Windows of dynamically set intervals, non-uniform across keys (different windows for different keys, different window sizes for each key), no overlap between two windows
         - Use cases — user session data, click data, real time gaming data analysis
 
+![Different types of windows](https://www.oreilly.com/radar/wp-content/uploads/sites/3/2020/02/Figure-03-Windowing.jpg)
+
 ## Window functions or Analytic functions
 - Analytic functions are those which compute values over groups of rows, returning a single result for each of the rows.
 - This is like the annotate function in django.
