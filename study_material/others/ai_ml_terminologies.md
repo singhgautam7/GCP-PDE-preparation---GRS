@@ -100,6 +100,24 @@ Limiting the information captured by model to prevent overfitting.
 - Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
 - Decreasing the learning rate = Slow learning
 
+### Hyperparameters
+- Hyperparameters are values that need to be selected before training process begins also can be modified during training
+- Hyperparameters are parameters whose values control the learning process and determine the values of model parameters that a learning algorithm ends up learning.
+- Ex: 
+	- Learning Rate.
+	- Number of Epochs.
+	- Momentum.
+	- Regularization constant.
+	- Number of branches in a decision tree. 
+
+### Difference between of Parameters and Hyperparameters
+| Parameters | Hyperparameters |
+|--|--|
+| Estimated during the training with historical data | Values set beforehand |
+| It is a part of the model | External to the model |
+| The estimated value is saved with the trained model | Not a part of trained model, hence values aren't saved |
+| Dependent on the dataset that the system is trained with | Independent of the dataset |
+
 ### Difference between of Features and Labels
 |Features|Labels|
 |--|--|
