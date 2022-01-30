@@ -22,23 +22,10 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  	- If any major change to windowing transformation (like completely changing window fn from fixed to sliding) in Beam/Dataflow/you want to stop pipeline but want inflight data --> use Drain option.
 	- For all other use cases and Minor changing to windowing fn (like just changing window time of sliding window) --> Use Update with Json mapping.
  - A **watermark** is a threshold that indicates when Dataflow expects all of the data in a window to have arrived. If new data arrives with a timestamp that's in the window but older than the watermark, the data is considered **late data**.
-<summary>Concepts</summary>
-  
-- **Pipeline**: encapsulates series of computations that accepts input data from external sources, transforms data to provide some useful intelligence, and produce output
-- **PCollections**: abstraction that represents a potentially distributed, multi-element data set, that acts as the pipeline’s data. PCollection objects represent input, intermediate, and output data. The edges of the pipeline.
-- **Transforms**: operations in pipeline. A transform takes a PCollection(s) as input, performs an operation that you specify on each element in that collection, and produces a new output PCollection. Composite transforms are multiple transforms: combining, mapping, shuffling, reducing, or statistical analysis.
-- **Pipeline I/O**: the source/sink, where the data flows in and out. Supports read and write transforms for a number of common data storage types, as well as custom.
-- **Windowing**: Windowing a PCollection divides the elements into windows based on the associated event time for each element.
-- **Triggers**: Allows specifying a trigger to control when (in processing time) results for the given window can be produced. Triggers determines when a Window's contents should be output based on certain criteria being met. Types of triggers are :  
-	 - Time based triggers
-	 - Data Driven triggers
-	 - Composite triggers
-</details>
-
  - Important IAM roles - 
 	 - **dataflow.developer** role enable the developer interacting with the Cloud Dataflow job , with data privacy. 
 	 - **dataflow.worker** role provides the permissions necessary for a *Compute Engine service account* to execute work units for a Dataflow pipeline
- <details><summary>Common Concepts</summary>
+ <details><summary>Common Concepts in Dataflow</summary>
 <p>
 
 - **Pipeline**: encapsulates series of computations that accepts input data from external sources, transforms data to provide some useful intelligence, and produce output
@@ -93,16 +80,21 @@ You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
 	 - Duplicates can happen when endpoint is not acknowledging messages.
 	 - Maintain a DB to store hash value for each entry.
 	 - Pub/Sub assigns a unique `message_id` to each message which can be used to detect duplicates.
- - Use cases : 
-	 - Gather events from many clients simultaneously and use stream processing (like dataflow to deliver it to BigQuery, BigTable, CloudStorage on other DBs.
-	 - Replicating data among DBs
-	 - Parallel processing by Pub/Sub messages to connect to cloud functions.
-	 - Data streaming for  various processes or devices(ex- IOT devices).
-	 - Cache invalidation for distributed cashes by publishing events, i.e. refreshing caches.
-	 - Load balancing for reliability.
-	 - Implementing asynchronous workflows.
-	 - Distributing event notifications.
-	 - Logging to multiple systems.
+<details><summary>Use Cases of PubSub</summary>
+<p>
+
+- Gather events from many clients simultaneously and use stream processing (like dataflow to deliver it to BigQuery, BigTable, CloudStorage on other DBs.
+- Replicating data among DBs
+- Parallel processing by Pub/Sub messages to connect to cloud functions.
+- Data streaming for  various processes or devices(ex- IOT devices).
+- Cache invalidation for distributed cashes by publishing events, i.e. refreshing caches.
+- Load balancing for reliability.
+- Implementing asynchronous workflows.
+- Distributing event notifications.
+- Logging to multiple systems.
+
+</p>
+</details>
 
 ## Data Fusion
 You can refer to [this](https://cloud.google.com/data-fusion) for docs.
