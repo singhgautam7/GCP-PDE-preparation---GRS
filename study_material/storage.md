@@ -107,6 +107,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - HBase and Cassandra are similar wide-column databases.
 - Supports HBase API
 - Bigtable tables are **sparse**. A column doesn't take up any space in a row that doesn't use the column
+- When you create a Cloud Bigtable instance and cluster, your choice of SSD or HDD storage for the cluster is permanent. If you need to convert an existing HDD cluster to SSD, or vice-versa, you can export the data from the existing instance and import the data into a new instance.
 - Data Replication: Replications is copying data across multiple regions to increase durability. Just add another cluster and it will be possible to replicate the data.
 - No downtime for cluster resize.
 - Clusters can be configured on number of nodes, SSD or HDD, Regional or Zone etc.
