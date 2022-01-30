@@ -24,7 +24,6 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Updating the pipeline: 
  	- If any major change to windowing transformation (like completely changing window fn from fixed to sliding) in Beam/Dataflow/you want to stop pipeline but want inflight data --> use Drain option.
 	- For all other use cases and Minor changing to windowing fn (like just changing window time of sliding window) --> Use Update with Json mapping.
- - A **watermark** is a threshold that indicates when Dataflow expects all of the data in a window to have arrived. If new data arrives with a timestamp that's in the window but older than the watermark, the data is considered **late data**.
  - Important IAM roles - 
 	 - **dataflow.developer** role enable the developer interacting with the Cloud Dataflow job , with data privacy. 
 	 - **dataflow.worker** role provides the permissions necessary for a *Compute Engine service account* to execute work units for a Dataflow pipeline
@@ -42,9 +41,9 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
 	 - Time based triggers
 	 - Data Driven triggers
 	 - Composite triggers
+- **Watermark**: It is a threshold that indicates when Dataflow expects all of the data in a window to have arrived. If new data arrives with a timestamp that's in the window but older than the watermark, the data is considered **late data**.
 - **ParDo**: It is a parallel processing function which can transform elements of an input PCollection to an output PCollection.
 - **DoFn**: It is a template which is used to create user defined functions that are referenced by ParDo
-
 </p>
 </details>
 
