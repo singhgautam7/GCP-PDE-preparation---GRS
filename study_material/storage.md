@@ -111,20 +111,13 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - No downtime for cluster resize.
 - Clusters can be configured on number of nodes, SSD or HDD, Regional or Zone etc.
 - Scales linearly. Increasing no. of nodes increases performance.
-- Useful for: 
-	- IOT data
-	- Financial data
-	- Graph data
-	- Marketing data
 - Mutations or Deletions takes extra storage as mutations are stored sequentially.
 - Deletions are just specialized mutations.
 - Automatic read-write operations to reorganize the data or to remove deleted items.
 - A Cloud Bigtable instance is mostly just a container for your clusters and nodes, which do all of the real work.
 - Tables belong to instances, not to clusters or nodes. So if you have an instance with up to 2 clusters, you can't assign tables to individual clusters
 - For time-series data, financial data or IOT data, **BigTable is recommended** as it is highly scalable.
-- Security:
-	- Access is given to Bigtable via IAM.
-	- Can manage security at project, instance and table levels
+- Security : Can manage security at project, instance and table levels and it can be managed via IAM
 - Backups are also supported.
 - It does not support SQL queries, joins or multi-row transactions.
 - Not good for data less than 1TB of data or items greater than 10MB.
@@ -206,6 +199,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 	- Dividing a table into segments to make it easier to manage and query data. This saves cost and time. 
 	- Partition is nothing but a newly created table. 
 	- You can partition on hourly or daily.
+	- Once table is created, you cannot change it partitioned
 - Clustering:
 	- Data in clustered tables are sorted based on values in one or more columns
 	- Can be applied after partitioning. Unpartitioned tables cannot be clusered.
@@ -224,35 +218,49 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 	- To export more than 1 GB of data, you need to put a wildcard in the destination filename. (up to 1 GB of table data to a single file)
 - BigQuery Data Transfer Service can only transfer data into BigQuery, not out of it
 - You can load data into BigQuery via two options: batch loading (free) and streaming (costly).
-- Controlling costs - 
-	- Avoid SELECT * (full scan), select only columns needed (SELECT * EXCEPT)
-	- Sample data using preview options for free
-	- Preview queries to estimate costs (dryrun)
-	- Use max bytes billed to limit query costs
-	- Don’t use LIMIT clause to limit costs (still full scan)
-	- Monitor costs using dashboards and audit logs
-	- Partition data by date
-	- Break query results into stages
-	- Use default table expiration to delete unneeded data
-	- Use streaming inserts wisely
-	- Set hard limit on bytes (members) processed per day
-- Query Performace: Generally, queries that do less work perform better.
-	- Input Data/Data Sources
-		- Avoid SELECT *
-		- Prune partitioned queries (for time-partitioned table, use PARTITIONTIME pseudo column to filter partitions)
-		- Denormalize data (use nested and repeated fields)
-		- Use external data sources appropriately
-		- Avoid excessive wildcard tables
-	- SQL Anti-Patterns
-		- Avoid self-joins., use window functions (perform calculations across many table rows related to current row)
-		- Partition/Skew: avoid unequally sized partitions, or when a value occurs more often than any other value
-		- Cross-Join: avoid joins that generate more outputs than inputs (pre-aggregate data or use window function) Update/Insert Single Row/Column: avoid point-specific DML, instead batch updates and inserts.
-	- Optimizing Query Computation
-		- Avoid repeatedly transforming data via SQL queries
-		- Avoid JavaScript user-defined functions
-		- Use approximate aggregation functions (approx count)
-		- Order query operations to maximize performance. Use ORDER BY only in outermost query, push complex operations to end of the query.
-		- For queries that join data from multiple tables, optimize join patterns. Start with the largest table.
+
+<details><summary>Controlling Cost in BigQuery</summary>
+<p>
+
+- Avoid SELECT * (full scan), select only columns needed (SELECT * EXCEPT)
+- Sample data using preview options for free
+- Preview queries to estimate costs (dryrun)
+- Use max bytes billed to limit query costs
+- Don’t use LIMIT clause to limit costs (still full scan)
+- Monitor costs using dashboards and audit logs
+- Partition data by date
+- Break query results into stages
+- Use default table expiration to delete unneeded data
+- Use streaming inserts wisely
+- Set hard limit on bytes (members) processed per day
+	
+</p>
+</details>
+
+<details><summary>Query Performance in BigQuery</summary>
+<p>
+	
+- Generally, queries that do less work perform better
+- Input Data/Data Sources
+	- Avoid SELECT *
+	- Prune partitioned queries (for time-partitioned table, use PARTITIONTIME pseudo column to filter partitions)
+	- Denormalize data (use nested and repeated fields)
+	- Use external data sources appropriately
+	- Avoid excessive wildcard tables
+- SQL Anti-Patterns
+	- Avoid self-joins., use window functions (perform calculations across many table rows related to current row)
+	- Partition/Skew: avoid unequally sized partitions, or when a value occurs more often than any other value
+	- Cross-Join: avoid joins that generate more outputs than inputs (pre-aggregate data or use window function) Update/Insert Single Row/Column: avoid point-specific DML, instead batch updates and inserts.
+- Optimizing Query Computation
+	- Avoid repeatedly transforming data via SQL queries
+	- Avoid JavaScript user-defined functions
+	- Use approximate aggregation functions (approx count)
+	- Order query operations to maximize performance. Use ORDER BY only in outermost query, push complex operations to end of the query.
+	- For queries that join data from multiple tables, optimize join patterns. Start with the largest table.
+	
+</p>
+</details>
+
 - [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
 - [Link](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns) for Best practices for performance
 
