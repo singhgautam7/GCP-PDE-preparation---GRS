@@ -15,8 +15,6 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Used for data processing, ELT(Extract Transform Load), filter, group for data sets.
  - Can read data from multiple sources, can kick off multiple cloud functions in parallel and can also writer to multiple sinks (like BigQuery, BigTable etc.)
  - When you update a job on the Dataflow service, you replace the existing job with a new job that runs your updated pipeline code
- - An example of dataflow can be seen in the following image: 
-![Google Stream Analysis](https://www.gstatic.com/bricks/image/f4f99d139d05057c917bb62406d1c36ab2f297d945f9c7d340208211dc217d19.svg)
  - Jobs can be created with inbuilt templates, or notebook instances(write jobs in Java/Python/SQL)
  - Can apply [windowing](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/windowing.md) to streams for rolling average for the window, max in a window etc.
  - You can stop a Dataflow job in the following two ways:
