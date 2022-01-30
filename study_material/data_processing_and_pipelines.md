@@ -8,6 +8,9 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Process batch or stream data.
  - Serverless, fast, scalable, fault-tolerant.
  - Multi-Step processing data. Eg: Wordcount.
+ - Cloud dataflow executed as jobs where one or more worker carry out specific tasks
+ - Supports SQL, Java, Python
+ - Stackdriver integration for logging and monitoring
  - Used for data processing, ELT(Extract Transform Load), filter, group for data sets.
  - Can read data from multiple sources, can kick off multiple cloud functions in parallel and can also writer to multiple sinks (like BigQuery, BigTable etc.)
  - When you update a job on the Dataflow service, you replace the existing job with a new job that runs your updated pipeline code
@@ -25,6 +28,8 @@ You can refer to [this](https://cloud.google.com/dataflow) for docs.
  - Important IAM roles - 
 	 - **dataflow.developer** role enable the developer interacting with the Cloud Dataflow job , with data privacy. 
 	 - **dataflow.worker** role provides the permissions necessary for a *Compute Engine service account* to execute work units for a Dataflow pipeline
+
+
  <details><summary>Common Concepts in Dataflow</summary>
 <p>
 
