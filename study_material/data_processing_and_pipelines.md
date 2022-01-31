@@ -72,16 +72,6 @@ You can refer to [this](https://cloud.google.com/dataproc/) for docs.
 	 - Service accounts used with Cloud Dataproc must have Dataproc/Dataproc Worker role (or have all the permissions granted by Dataproc Worker role).
 		 - Need permissions to read and write to Google Cloud Storage, and to write to Google Cloud Logging
 
-## Diff between DataFlow and DataProc
-
-| Workload | DataFlow | DataProc |
-|--|:-:|:-:|
-|Stream processing (ETL)| No | Yes |
-|Batch processing (ETL)| Yes | Yes |
-|Iterative processing and notebooks| Yes | No |
-|Machine learning with Spark ML| Yes | No |
-|Preprocessing for Machine learning| No | Yes |
-
 ## Pub/Sub
 You can refer to [this](https://cloud.google.com/pubsub/docs/overview) for docs.
  - Replacement for **Kafka**
@@ -147,5 +137,14 @@ You can refer to [this](https://cloud.google.com/functions/docs) for docs.
 - The `--max-instances` parameter limits the number of concurrently executing function instances
 
 ## DataProc vs DataFlow vs DataPrep
+
+| Workload | DataFlow | DataProc |
+|--|:-:|:-:|
+|Stream processing (ETL)| No | Yes |
+|Batch processing (ETL)| Yes | Yes |
+|Iterative processing and notebooks| Yes | No |
+|Machine learning with Spark ML| Yes | No |
+|Preprocessing for Machine learning| No | Yes |
+
 ![enter image description here](https://cloud.google.com/architecture/images/data-lifecycle-4.svg)
 
