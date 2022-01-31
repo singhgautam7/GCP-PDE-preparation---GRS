@@ -1,3 +1,4 @@
+
 # Google Professional Data Engineering(PDE) Certification Exam Preparation Guide
 
 This guide is created for the preparation/revision for the [Google Professional Data Engineering certification exam](https://cloud.google.com/certification/data-engineer). 
@@ -7,7 +8,16 @@ I have tried to divide the topics into sections for better understanding and top
 Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
  2. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
-	 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
+	 - Non-mandatory prerequisite(s):
+		 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
+	 - Contents: 
+		 - [Cloud Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#cloud-storage)
+		 - [DataStore](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#datastore)
+		 - [FireStore](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#firestore)
+		 - [Cloud SQL](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#cloud-sql)
+		 - [Cloud Spanner](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#cloud-spanner)
+		 - [Bigtable](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigtable)
+		 - [BigQuery](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigquery)
  3. [Data Processing and Pipelines](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md)
  4. [Machine Learning in GCP](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/ai_ml.md)
 	 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
