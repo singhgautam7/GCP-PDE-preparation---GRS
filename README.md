@@ -19,10 +19,28 @@ Even though you can find all the topics inside the _study material_ folder, the 
 		 - [Bigtable](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigtable)
 		 - [BigQuery](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigquery)
  3. [Data Processing and Pipelines](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md)
+	 - Contents: 
+		 - [DataFlow](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataflow)
+		 - [DataProc](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc)
+		 - [Pub/Sub](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#pubsub)
+		 - [Cloud Data Fusion](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataprep)
+		 - [DataPrep](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataprep)
+		 - [Cloud Composer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#cloud-composer)
+		 - [Cloud Functions](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc-vs-dataflow-vs-dataprep)
+		 - [DataProc vs DataFlow vs DataPrep](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc-vs-dataflow-vs-dataprep)
  4. [Machine Learning in GCP](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/ai_ml.md)
-	 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
+	 - Non-mandatory prerequisite(s):
+		 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
  5. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
+	 - Contents: 
+		 - [Data Lab](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md#cloud-datalab)
+		 - [Data Studio](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md#data-studio)
  6. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
+	 - Contents: 
+		 - [IAM](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#identity-and-access-management-iam)
+		 - [Stackdriver](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#stackdriver)
+		 - [Cloud Deployment Manager](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#cloud-deployment-manager)
+		 - [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-transfer)
 
 ## Important Links
  - [Question List](https://docs.google.com/document/d/1Nz5fVYeOEIdoZKHduR473RFv-z9fbHWNZKxmNvmUDkI/edit) aling with [Answers](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk) in Google Docs
