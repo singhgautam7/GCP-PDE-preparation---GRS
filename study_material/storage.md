@@ -218,7 +218,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 	- Once table is created, you cannot change it partitioned
 - Clustering:
 	- Data in clustered tables are sorted based on values in one or more columns
-	- Can be applied after partitioning. Unpartitioned tables cannot be clusered.
+	- Clustering is supported only on partitioned tables
 	- Clustered tables can improve performance of aggregate queries.
 - Types of queries - 
 	- Interactive: query is executed immediately
