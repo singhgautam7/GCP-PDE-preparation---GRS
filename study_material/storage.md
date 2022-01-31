@@ -368,9 +368,6 @@ BigQuery offers a choice of two pricing models for running queries -
 - If there is a need of data warehousing then BigQuery is preferred.
 - Bigtable is best suited to the following scenarios: time-series data (e.g. CPU and memory usage over time for multiple servers), financial data (e.g. transaction histories, stock prices, and currency exchange rates), and IoT (Internet of Things) use cases
 
-
-![Which Storage Should I Use](https://storage.googleapis.com/gweb-cloudblog-publish/images/Storage-to-Use_v04-23-21.max-1600x1600.jpeg)
-
 ![Storage Comparison](https://juanignaciosl.github.io/img/deogcp-storage.png)
-
+![Which Storage Should I Use](https://storage.googleapis.com/gweb-cloudblog-publish/images/Storage-to-Use_v04-23-21.max-1600x1600.jpeg)
 ![Which DB Should I Use](https://storage.googleapis.com/gweb-cloudblog-publish/images/Which-Database_v07-10-21_1.max-2000x2000.jpeg)
