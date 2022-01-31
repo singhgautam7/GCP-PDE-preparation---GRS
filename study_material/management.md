@@ -58,6 +58,7 @@ TYPES OF ROLES
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
 
 ## Data Catalog
+- Cloud Catalog is designed to help data consumers understand what data is available, what it means, and how it can be used
 - A fully managed and highly scalable data discovery and metadata management service
 - Single place to discover all data, asset across all project
 - Use cases - Search and tag data
