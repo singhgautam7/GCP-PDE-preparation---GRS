@@ -172,6 +172,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Command line tool = `bq`
 - BigQuery is not suitable for transactional use case
 - **Append** has better performance than **Update**
+- Denormalizing in BigQuery can be done with nested and repeated columns
 - Hierarchy - 
 ```
 ├── Project
