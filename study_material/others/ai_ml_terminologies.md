@@ -78,6 +78,7 @@ Ex: A grade for marks 80 - 100, B grade 60 - 79 and so on
 Limiting the information captured by model to prevent overfitting.
 
 ### Overfitting
+- Fits too well with the training data
 - When the model performs great on the input data but poorly on the test data
 - Sufficient complex models can lead to overfitting
 - Correction for overfitting: 
