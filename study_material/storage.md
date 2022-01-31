@@ -226,6 +226,8 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Types of queries - 
 	- Interactive: query is executed immediately
 	- Batch: Batches of queries are queued and the query starts when idle resources are available
+- [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
+- [Link](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns) for Best practices for performance
 
 
 <details><summary>Partitioning in BQ</summary>
@@ -356,9 +358,6 @@ BigQuery offers a choice of two pricing models for running queries -
 	
 </p>
 </details>
-
-- [Link](https://cloud.google.com/architecture/dw2bq/dw-bq-migration-overview) for Migrating data warehouses to BigQuery
-- [Link](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns) for Best practices for performance
 
 ## Choosing a Database
 - If there is a requirement to search terabytes or petabytes of data relatively quickly it will make more sense to simply store in BigQuery.
