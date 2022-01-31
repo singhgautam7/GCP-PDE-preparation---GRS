@@ -203,12 +203,12 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Command line tool = `bq`
 - BigQuery is not suitable for transactional use case
 - **Append** has better performance than **Update**
-- Denormalizing in BigQuery can be done with nested and repeated columns
 - Tables here have schema
 - Jobs are async tasks that work on the top of table
 - Used for load, query, extract or query data
 - No join is preferred in BigQuery
 - The data should be denormalized
+- Denormalizing in BigQuery can be done with **nested and repeated columns**
 - Security can be applied at a project level or dataset level but NOT at table level.
 - Authorized views allows to share query results without giving access to the underlying data
 - Caching time = 24 hrs
@@ -269,8 +269,8 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 <p>
 
 - Native tables: 
-	- **Permanent tables** are those that are created in a dataset and linked to an external source. Dataset-level access controls can be applied to these tables.
-	- **Temporary tables** are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations or caching,  such as loading data into a data warehouse. It is not sharable. 
+	- *Permanent tables* are those that are created in a dataset and linked to an external source. Dataset-level access controls can be applied to these tables.
+	- *Temporary tables* are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations or caching,  such as loading data into a data warehouse. It is not sharable. 
 - External tables (from external sources, also know as **federated** sources). It is recommended when data doesn't change much often, or when tables are small.
 - Views
 
