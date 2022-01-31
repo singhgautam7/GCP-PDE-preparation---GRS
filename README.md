@@ -41,6 +41,7 @@ Even though you can find all the topics inside the _study material_ folder, the 
 		 - [Stackdriver](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#stackdriver)
 		 - [Cloud Deployment Manager](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#cloud-deployment-manager)
 		 - [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-transfer)
+ 7. [Extras](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
 
 ## Important Links
  - [Question List](https://docs.google.com/document/d/1Nz5fVYeOEIdoZKHduR473RFv-z9fbHWNZKxmNvmUDkI/edit) aling with [Answers](https://docs.google.com/document/d/1hoMYLQDJsQ5etWUmyjrtOH91pJk2SZSkYJ_n8qEis8o/edit?usp=drivesdk) in Google Docs
