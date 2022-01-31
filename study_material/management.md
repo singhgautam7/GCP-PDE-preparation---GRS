@@ -48,6 +48,7 @@ TYPES OF ROLES
 - Stores log for 30 days
 - Bigtable is not a sink option here.
 - There is no way to create an alert on Cloud Logging not receiving data from a service
+- 
 ### Cloud Monitoring
 - Create dashboards and visualizations
 - Collect metrics from GCP, AWS and hybrid resources
@@ -55,6 +56,13 @@ TYPES OF ROLES
 
 ## Cloud Deployment Manager
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
+
+## Data Catalog
+- A fully managed and highly scalable data discovery and metadata management service
+- Single place to discover all data, asset across all project
+- Use cases - Search and tag data
+- Data Catalog will collect metadata automatically from several GCP sources. These sources include Cloud Storage, Cloud Bigtable, Google Sheets, BigQuery, and Cloud Pub/Sub.
+- In addition to native metadata, Data Catalog can collect custom  metadata through the use of tags
 
 ## Data transfer
 - Storage Transfer Service - 
