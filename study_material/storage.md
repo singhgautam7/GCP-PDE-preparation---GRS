@@ -275,7 +275,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Native tables: 
 	- *Permanent tables* are those that are created in a dataset and linked to an external source. Dataset-level access controls can be applied to these tables.
 	- *Temporary tables* are created in a special dataset and will be available for approximately 24 hours. Temporary tables are useful for one-time operations or caching,  such as loading data into a data warehouse. It is not sharable. 
-- External tables (from external sources, also know as **federated** sources). It is recommended when data doesn't change much often, or when tables are small.
+- External tables (from external sources, also know as **federated** sources). Used when tables are small. As an external data source, the frequently changing data does not need to be reloaded every time it is updated.
 - Views
 
 </p>
