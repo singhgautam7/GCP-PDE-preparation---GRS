@@ -139,7 +139,7 @@ You can refer to [this](https://cloud.google.com/functions/docs) for docs.
 
 ## DataProc vs DataFlow vs DataPrep
 
-| Workload | DataFlow | DataProc |
+| Workload | Dataproc | Dataflow |
 |--|:-:|:-:|
 |Stream processing (ETL)| No | Yes |
 |Batch processing (ETL)| Yes | Yes |
