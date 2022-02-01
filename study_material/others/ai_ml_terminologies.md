@@ -69,7 +69,7 @@ Limiting the information captured by model to prevent overfitting.
 - Low bias is desired
 - Happens when we do not generalize the training data enough 
 
-<details><summary>Bias vsVariance</summary>
+<details><summary>Bias vs Variance</summary>
 <p>
 
 ![enter image description here](https://community.alteryx.com/t5/image/serverpage/image-id/52874iE986B6E19F3248CF?v=v2)
