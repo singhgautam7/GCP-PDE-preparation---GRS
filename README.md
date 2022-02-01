@@ -47,7 +47,6 @@ Even though you can find all the topics inside the _study material_ folder, the 
 		 - [Stackdriver](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#stackdriver)
 		 - [Cloud Deployment Manager](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#cloud-deployment-manager)
 		 - [Data Catalog](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-catalog)
-		 - [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-transfer)
  8. [Extras](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
 
 ## Important Links
