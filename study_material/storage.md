@@ -137,7 +137,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - When you create a Cloud Bigtable instance and cluster, your choice of SSD or HDD storage for the cluster is permanent. If you need to convert an existing HDD cluster to SSD, or vice-versa, you can export the data from the existing instance and import the data into a new instance.
 - Data Replication: Replications is copying data across multiple regions to increase durability. Just add another cluster and it will be possible to replicate the data.
 - No downtime for cluster resize.
-- Clusters can be configured on number of nodes, SSD or HDD, Regional or Zone etc.
+- While instance creation, clusters can be configured on number of nodes, SSD or HDD, Regional or Zone etc.
 - Scales linearly. Increasing no. of nodes increases performance.
 - Mutations or Deletions takes extra storage as mutations are stored sequentially.
 - Deletions are just specialized mutations.
@@ -149,15 +149,13 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - It does not support SQL queries, joins or multi-row transactions.
 - Not good for data less than 1TB of data or items greater than 10MB.
 - `cbt` is a tool for doing basic interactions with Cloud Bigtable
-- Impossible to Switching between SSD and HDD
 - [Garbage collection](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/definitions/garbage_collection.md) is supported.
 - Supports max of 1,000 tables in each instance.
 - Can use up to around 100 column families.
 - Empty columns don’t take up any space. Can create large number of columns, even if most columns are empty in most rows
 - Adding more nodes to a cluster (not replication) can improve the write performance
 - Google recommends adding nodes when storage utilization is > 70%
-- BigTable provides lowest latency
-- It is not a good solution for less than 1 TB of data.
+- BigTable provides **lowest latency**
 - Multi-cluster routing is beneficial in cases where high availability is needed
 - Field promotion avoids hotspotting
 - It is recommended to create your Compute Engine instance in the same zone as your Cloud Bigtable instance for the best possible performance. If it's not possible to create a instance in the same zone, you should create your instance in another zone within the same region
@@ -167,7 +165,8 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 <details><summary>Row Keys in BigTable</summary>
 <p>
 
-Each table has only one index, the row key, and each row key must be unique. Best Practices for creating row keys:
+Each table has only one index, the row key, and each row key must be unique.
+Best Practices for creating row keys:
 	- Design your row key based on the queries you will use to retrieve the data.
 	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows.
 	- Avoid using a single row key to identify a value that must be updated very frequently
@@ -204,7 +203,6 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Supports CSV, JSON, Avro, SQL, Parquet
 - Querying is very expensive here
 - Command line tool = `bq`
-- BigQuery is not suitable for transactional use case
 - **Append** has better performance than **Update**
 - Tables here have schema
 - Jobs are async tasks that work on the top of table
@@ -212,18 +210,16 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - No join is preferred in BigQuery
 - The data should be denormalized
 - Denormalizing in BigQuery can be done with **nested and repeated columns**
-- Security can be applied at a project level or dataset level but NOT at table level.
-- Authorized views allows to share query results without giving access to the underlying data
+- Security can be applied at a project level or dataset or at table level.
+- _Authorized views_ allows to share query results without giving access to the underlying data
 - Caching time = 24 hrs
 - No prices from data fetched from cache.
 - Can directly run query on cloud storage. No need for dataflow.
 - BQ is optimised for reads
-- Streaming IP is payable
 - **BigQuery Data Transfer Service** can only transfer data into BigQuery, not out of it
 - You can load data into BigQuery via two options: batch loading (free) and streaming (costly).
 - When using the Cloud Console, files loaded from a local data source cannot exceed 10 MB.
-- BigQuery tables can act as data sink in both batch and streaming mode
-- BigQuery maintains a seven-day history of changes so that you can query a point-in time snapshot of data
+- BigQuery maintains a 7 day history of changes so that you can query a point-in time snapshot of data
 - Wildcard tables - Used if you want to union all similar tables with similar names. ’*’ (e.g. project.dataset.Table*)
 - **Partitioning > Table Sharding**: When you have multiple wildcard tables, best option is to shard it into single partitioned table. Time and cost efficient
 - Types of queries - 
@@ -236,7 +232,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 <details><summary>Partitioning in BQ</summary>
 <p>
 
-- Dividing a table into segments to make it easier to manage and query data. This saves cost and time. 
+- Dividing a table into **segments** to make it easier to manage and query data. This saves cost and time. 
 - Partition is nothing but a newly created table. 
 - You can partition on hourly or daily.
 - Once table is created, you cannot change it partitioned
@@ -247,7 +243,7 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 <details><summary>Clustering in BQ</summary>
 <p>
 
-- Data in clustered tables are sorted based on values in one or more columns
+- Data in clustered tables are **sorted** based on values in one or more columns
 - Clustering is supported only on partitioned tables
 - Clustered tables can improve performance of aggregate queries.
 
