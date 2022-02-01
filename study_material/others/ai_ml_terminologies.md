@@ -1,3 +1,4 @@
+
 # Neural Networks and Deep Learning
 - Neural networks reflect the behavior of the human brain, allowing computer programs to recognize patterns and solve common problems in the fields of AI, machine learning, and deep learning.
 - Weights and Biases are adjusted by a neural network as it learns from a training dataset
@@ -67,6 +68,14 @@ Limiting the information captured by model to prevent overfitting.
 - Occurs when relationships are missed.
 - Low bias is desired
 - Happens when we do not generalize the training data enough 
+
+<details><summary>Bias vsVariance</summary>
+<p>
+
+![enter image description here](https://community.alteryx.com/t5/image/serverpage/image-id/52874iE986B6E19F3248CF?v=v2)
+
+</p>
+</details>
 
 ### Learning rate
 - Increasing the learning rate = Fast learning (at the risk of possibly missing the absolute optimal solution)
