@@ -14,3 +14,4 @@
 - Cost less than GPU
 - Available with Compute Engine or Kubernetes Engine
 - Available individually or in pods
+- TPU support Models with no custom TensorFlow operations inside the main training loop
