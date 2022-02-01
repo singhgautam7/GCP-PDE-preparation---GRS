@@ -162,9 +162,8 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Multi-cluster routing is beneficial in cases where high availability is needed
 - Field promotion avoids hotspotting
 - It is recommended to create your Compute Engine instance in the same zone as your Cloud Bigtable instance for the best possible performance. If it's not possible to create a instance in the same zone, you should create your instance in another zone within the same region
-- The only way to achieve strong consistency in Cloud Bigtable 
-is by having all reads routed from a single cluster and using the other replicas only for 
-failover
+- The only way to achieve strong consistency in Cloud Bigtable is by having all reads routed from a single cluster and using the other replicas only for failover
+- For Cloud Bigtable, you can configure access control at the project level. For example, you can grant the ability to: Read from, but not write to, any table within the project. Read from and write to any table within the project, but not manage instances. Read from and write to any table within the project, and manage instances
 
 <details><summary>Row Keys in BigTable</summary>
 <p>
