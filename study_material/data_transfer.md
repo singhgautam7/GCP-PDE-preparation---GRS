@@ -1,6 +1,6 @@
 # Data Transfer
 
-All the sub-heading here represents approaches to data transfer.
+All the sub-headings here represents approaches to data transfer.
 
 ## 1. Cloud Storage transfer tools
 
