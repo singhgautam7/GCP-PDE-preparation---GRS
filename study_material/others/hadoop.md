@@ -11,7 +11,7 @@ An entire ecosystem of tools have emerged around Hadoop, which are *based on int
 - **Hive**: Data warehouse software built o top of Hadoop that facilitates reading, writing, and managing large datasets residing in distributed storage using SQL-like queries (HiveQL).
 - **Pig**: high level scripting language (Pig Latin) that enables writing complex data transformations. **(GCP alternative : Dataflow)**
 - **Spark**: Framework for writing fast, distributed programs for data processing and analysis.
-- **Hive**: Non-relational, NoSQL, column-oriented database management system that runs on top of HDFS. **(GCP alternative : BigTable)**
+- **HBase**: Non-relational, NoSQL, column-oriented database management system that runs on top of HDFS. **(GCP alternative : BigTable)**
 - **Kafka/Flink**: Batch/stream processing framework.
 - **Beam**: Programming model to define and execute data processing pipelines, including ETL, batch and stream (continuous) processing. **(GCP alternative : Google Cloud Dataflow)**
 - **Oozie**: Workflow scheduler system to manage Hadoop jobs.
