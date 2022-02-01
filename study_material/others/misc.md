@@ -1,7 +1,7 @@
 ### How to measure the reliability of a system
 Mean time between failure is used for measuring reliability.
 
-### What is used to dsitribute workload?
+### What is used to distribute workload?
 A global load balancer is needed to distribute workload across multiple regions.
 
 ### When to use L1 and L2 regularization?
