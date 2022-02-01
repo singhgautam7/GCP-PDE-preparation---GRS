@@ -39,7 +39,7 @@
  - It is a fully managed and serverless solution that allows for transactions and will autoscale (storage and compute) without the need to manage any infrastructure
  - Each transaction is guaranteed to be **atomic**, meaning that transactions are never partially applied. Either all of the operations in the transaction are applied, or none of them are applied.
  - Document kind storage
- - Tightly coupled with app engine, so one project can have jusgt one firestore/datastore
+ - Tightly coupled with app engine, so one project can have just one firestore/datastore
  - GQL (Google Query Language) is used which is similar to SQL
  - Support ACID (Atomicity, Consistency, Isolation, Durability) transactions
  - Replication across different regions is possible
@@ -109,7 +109,7 @@
 	-  Introduce more variation in the sort order of primary keys generated in close proximity.  Options for keys include using the hash of a natural key; swapping the  order of columns in keys to promote  higher-cardinality attributes; using a universally unique identifier (UUID), specifically version 4 or later; and using bit-reverse  sequential values.
 - **Secondary Index** -
 	- In a Cloud Spanner database, Cloud Spanner automatically creates an index for each table's primary key. For example, you don't need to do anything to index the primary key of Singers, because it's automatically indexed for you.
-	- y. Secondary indexes are explicitly created using  the `CREATE INDEX` command
+	- Secondary indexes are explicitly created using  the `CREATE INDEX` command
 	- Secondary indexes are useful when filtering in a query using a `WHERE` clause. If the column referenced in the WHERE clause is indexed, the index can be used for filtering rather than scanning the full table and then filtering
 - Use interleaved tables with a parent-child relationship in which parent data is stored with child data. This makes retrieving data from both tables simultaneously more efficient than if the data were stored separately and is especially helpful when performing joins. Since the data from both tables is co-located, the database has to perform fewer seeks to get all the needed data
 
