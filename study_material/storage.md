@@ -91,6 +91,7 @@
 	- Scheduled Backups
 - DB Migration Service (DMS) available
 - To shift some workloads, `read replicas` can be made.
+- Cloud SQL supports transactions as well as **analysis through a _BI tool_**.
 
 ## Cloud Spanner
 - Can be scaled globally.
