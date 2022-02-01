@@ -8,6 +8,11 @@ I have tried to divide the topics into sections for better understanding and top
 Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
  2. [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md)
+	 - Contents: 
+		 - [Cloud Storage Transfer Tools](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md#1-cloud-storage-transfer-tools)
+		 - [Storage Transfer Service](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md#1-cloud-storage-transfer-tools)
+		 - [Transfer Appliances](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md#3-transfer-appliances)
+		 - [BigQuery Data Transfer Service](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md#4-bigquery-data-transfer-service)
  3. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
 	 - Non-mandatory prerequisite(s):
 		 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
