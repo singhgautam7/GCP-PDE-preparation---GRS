@@ -7,7 +7,8 @@ I have tried to divide the topics into sections for better understanding and top
 ## Contents
 Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
- 2. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
+ 2. [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md)
+ 3. [Storage](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md)
 	 - Non-mandatory prerequisite(s):
 		 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
 	 - Contents: 
@@ -18,7 +19,7 @@ Even though you can find all the topics inside the _study material_ folder, the 
 		 - [Cloud Spanner](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#cloud-spanner)
 		 - [Bigtable](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigtable)
 		 - [BigQuery](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/storage.md#bigquery)
- 3. [Data Processing and Pipelines](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md)
+ 4. [Data Processing and Pipelines](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md)
 	 - Contents: 
 		 - [DataFlow](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataflow)
 		 - [DataProc](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc)
@@ -28,21 +29,21 @@ Even though you can find all the topics inside the _study material_ folder, the 
 		 - [Cloud Composer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#cloud-composer)
 		 - [Cloud Functions](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc-vs-dataflow-vs-dataprep)
 		 - [DataProc vs DataFlow vs DataPrep](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_processing_and_pipelines.md#dataproc-vs-dataflow-vs-dataprep)
- 4. [Machine Learning in GCP](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/ai_ml.md)
+ 5. [Machine Learning in GCP](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/ai_ml.md)
 	 - Non-mandatory prerequisite(s):
 		 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
- 5. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
+ 6. [Data Visualization](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md)
 	 - Contents: 
 		 - [Data Lab](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md#cloud-datalab)
 		 - [Data Studio](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/visualization.md#data-studio)
- 6. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
+ 7. [Management](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md)
 	 - Contents: 
 		 - [IAM](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#identity-and-access-management-iam)
 		 - [Stackdriver](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#stackdriver)
 		 - [Cloud Deployment Manager](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#cloud-deployment-manager)
 		 - [Data Catalog](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-catalog)
 		 - [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-transfer)
- 7. [Extras](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
+ 8. [Extras](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
 
 ## Important Links
  - [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
