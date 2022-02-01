@@ -145,7 +145,6 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - A Cloud Bigtable instance is mostly just a container for your clusters and nodes, which do all of the real work.
 - Tables belong to instances, not to clusters or nodes. So if you have an instance with up to 2 clusters, you can't assign tables to individual clusters
 - For time-series data, financial data or IOT data, **BigTable is recommended** as it is highly scalable.
-- Security : Can manage security at project, instance and table levels and it can be managed via IAM
 - Backups are also supported.
 - It does not support SQL queries, joins or multi-row transactions.
 - Not good for data less than 1TB of data or items greater than 10MB.
@@ -163,7 +162,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Field promotion avoids hotspotting
 - It is recommended to create your Compute Engine instance in the same zone as your Cloud Bigtable instance for the best possible performance. If it's not possible to create a instance in the same zone, you should create your instance in another zone within the same region
 - The only way to achieve strong consistency in Cloud Bigtable is by having all reads routed from a single cluster and using the other replicas only for failover
-- For Cloud Bigtable, you can configure access control at the project level. For example, you can grant the ability to: Read from, but not write to, any table within the project. Read from and write to any table within the project, but not manage instances. Read from and write to any table within the project, and manage instances
+- Security : Can manage security at project, instance and table levels and it can be managed via IAM. For example, you can grant the ability to: Read from, but not write to, **any table** within the project. Read from and write to **any table** within the project, but not manage instances. Read from and write to **any table** within the project, and manage instances
 
 <details><summary>Row Keys in BigTable</summary>
 <p>
