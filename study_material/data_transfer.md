@@ -9,15 +9,16 @@ All the sub-headings here represents approaches to data transfer.
  - Methods: 
 	 - [Cloud Console UI](https://cloud.google.com/storage/docs/cloud-console#_uploadingdata) (Uploading data to bucket)
 	 - [JSON API](https://cloud.google.com/storage/docs/json_api)
-	 - [gsutil command line interface](https://cloud.google.com/storage/docs/quickstart-gsutil#upload_an_object_into_your_bucket)
+	 - [gsutil command line interface](https://cloud.google.com/storage/docs/quickstart-gsutil#upload_an_object_into_your_bucket) (parallel/multi-processing)
 
 
 ## 2. Storage Transfer Service
 
- - Quickly import online data into Cloud Storage from **other clouds**, from **on-premises** sources, or from **one bucket to another** within Google Cloud.
+ - Quickly import online data into Cloud Storage from **other clouds**, from **on-premises** sources, or from **one bucket to another** within Google Cloud. Ex: Amazon s3, Azure Blob Storage
  - Set up recurring transfer jobs.
  - A managed solution which handles retries and provides detailed transfer logging.
  - The on-premise transfer service minimizes the transfer time by utilizing the maximum available bandwidth and by applying performance optimizations
+ - Compressing and combining smaller files info fewer larger files is also a best practice for speeding up transfer speeds
 
 | Transfer Scenario | Recommendation |
 |--|--|
