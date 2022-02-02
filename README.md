@@ -2,8 +2,9 @@
 # Google Professional Data Engineering(PDE) Certification Exam Preparation Guide
 
 This guide is created for the preparation/revision for the [Google Professional Data Engineering certification exam](https://cloud.google.com/certification/data-engineer). 
-I have tried to divide the topics into sections for better understanding and topic-specific revisions.
+
 ---
+
 ## Important Links for preparation
 - [Udemy - GCP Associate Cloud Engineer Course](https://www.udemy.com/course-dashboard-redirect/?course_id=3827154)
  	- Helped me to get** basic knowledge** about GCP
@@ -16,7 +17,9 @@ I have tried to divide the topics into sections for better understanding and top
 - [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
  > Note: Even though the answers are mentioned here, some of the answers might be wrong. So Google the questions or discuss it with peers to be 100% sure of the right answer. 
 - [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on how to solve the questions in PDE
+
 ---
+
 ## Contents
 Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Non-mandatory prerequisite(s)](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
