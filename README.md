@@ -3,7 +3,20 @@
 
 This guide is created for the preparation/revision for the [Google Professional Data Engineering certification exam](https://cloud.google.com/certification/data-engineer). 
 I have tried to divide the topics into sections for better understanding and topic-specific revisions.
-
+---
+## Important Links for preparation
+- [Udemy - GCP Associate Cloud Engineer Course](https://www.udemy.com/course-dashboard-redirect/?course_id=3827154)
+ 	- Helped me to get** basic knowledge** about GCP
+- [Udemy - Google Cloud Professional Data Engineer Certification Course by Ankit Mistry](https://www.udemy.com/course-dashboard-redirect/?course_id=4095980)
+	- After the above course, this course helped me to **dive deeper in GCP** and helped understand the cloud platform with exam's point of view. 
+	- The course se really detailed and I had no problems in understanding it in 2x speed as well.
+- [Udemy - Google Cloud Professional Data Engineer - Get Certified Course by Dan Sullivan](https://www.udemy.com/course-dashboard-redirect/?course_id=3125272) 
+	- This is what I used for quickly **revising my concepts** and also this helped gain some more insights about exam related questions
+	- At the end of the course, there is a 2 hrs long **Mock Test** with 50 questions which helped me get into the mindset of giving the exam.
+- [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
+ > Note: Even though the answers are mentioned here, some of the answers might be wrong. So Google the questions or discuss it with peers to be 100% sure of the right answer. 
+- [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on how to solve the questions in PDE
+---
 ## Contents
 Even though you can find all the topics inside the _study material_ folder, the suggested sequence for studying is as follows:
  1. [Non-mandatory prerequisite(s)](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
@@ -48,15 +61,3 @@ Even though you can find all the topics inside the _study material_ folder, the 
 	 - [Cloud Deployment Manager](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#cloud-deployment-manager)
 	 - [Data Catalog](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/management.md#data-catalog)
 
-## Important Links for preparation
-- [Udemy - GCP Associate Cloud Engineer Course](https://www.udemy.com/course-dashboard-redirect/?course_id=3827154)
- 	- Helped me to get** basic knowledge** about GCP
-- [Udemy - Google Cloud Professional Data Engineer Certification Course by Ankit Mistry](https://www.udemy.com/course-dashboard-redirect/?course_id=4095980)
-	- After the above course, this course helped me to **dive deeper in GCP** and helped understand the cloud platform with exam's point of view. 
-	- The course se really detailed and I had no problems in understanding it in 2x speed as well.
-- [Udemy - Google Cloud Professional Data Engineer - Get Certified Course by Dan Sullivan](https://www.udemy.com/course-dashboard-redirect/?course_id=3125272) 
-	- This is what I used for quickly **revising my concepts** and also this helped gain some more insights about exam related questions
-	- At the end of the course, there is a 2 hrs long **Mock Test** with 50 questions which helped me get into the mindset of giving the exam.
-- [Practice Question Bank](https://www.passnexam.com/google/google-data-engineer) with more than 200 questions
- > Note: Even though the answers are mentioned here, some of the answers might be wrong. So Google the questions or discuss it with peers to be 100% sure of the right answer. 
-- [Videos](https://www.youtube.com/watch?v=7UOX2R-xf8I&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQkHdA) on how to solve the questions in PDE
