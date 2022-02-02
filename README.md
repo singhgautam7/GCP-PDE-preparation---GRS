@@ -7,7 +7,7 @@ This guide is created for the preparation/revision for the [Google Professional 
 
 ## Important Links for preparation
 - [Udemy - GCP Associate Cloud Engineer Course](https://www.udemy.com/course-dashboard-redirect/?course_id=3827154)
- 	- Helped me to get** basic knowledge** about GCP
+ 	- Helped me to get **basic knowledge** about GCP
 - [Udemy - Google Cloud Professional Data Engineer Certification Course by Ankit Mistry](https://www.udemy.com/course-dashboard-redirect/?course_id=4095980)
 	- After the above course, this course helped me to **dive deeper in GCP** and helped understand the cloud platform with exam's point of view. 
 	- The course se really detailed and I had no problems in understanding it in 2x speed as well.
