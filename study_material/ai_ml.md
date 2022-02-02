@@ -1,3 +1,5 @@
+It is recommended to go through [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md) before starting this
+
 # Machine Learning
 - Types
 	- Supervised learning: 
@@ -28,14 +30,14 @@ GCP ML Solutions
 │   ├── Tensorflow, PyTorch, Scickit-learn
 ```
 
-## Pre-Trained Model
+### Pre-Trained Model
 
-### Natural Language API
+#### Natural Language API
 - Types of analysis that can be done here - 
 	- **Entity analysis:** Identify entities within documents receipts, invoices, and contracts and label them by types such as date, person, contact information, organization, location, events, products, and media.
 	- **Sentiment analysis:** Understand the overall opinion, feeling, or attitude sentiment expressed in a block of text.
 
-## AutoML
+### AutoML
 - Designed for model builders with limited ML experience
 - GUI for training, evaluating and tuning
 - Services for sight, language and structured data
