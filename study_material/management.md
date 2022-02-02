@@ -28,28 +28,22 @@ TYPES OF ROLES
 [Link](https://cloud.google.com/products/operations) to docs
 - Now know as *Google Cloud's operations suite*
 - For storing, searching, analyzing, monitoring, and alerts on log data and events.
-- Sub-products are - 
-	- Debugger
-	- Error Reporting
-	- Alerting
-	- Trace
-	- Logging
 - **Audit Logs to review data access** (e.g. BigQuery)
 - Application Performance Management (APM) combines the monitoring and troubleshooting capabilities of Cloud Logging and Cloud Monitoring without aggregated sink this will be required to be done for each project individually which will be cumbersome.
 - Monitoring does not only provide you with access to Dataflow-related metrics, but also lets you to create alerting policies and dashboards so you can chart time series of metrics and choose to be notified when these metrics reach specified values.
 - Use cases - 
-	- Monitor your infrastructure
-	- Troubleshoot your applications
-	- Health check monitoring
-	- Latency management
-	- Debugging by inspecting the state of your application at any code location in production without stopping or slowing down your requests
-	- Security Management - provides near real-time user activity visibility across Google Cloud
-### Cloud Logging
+	- **Debugger**: inspect state of app in real time without stopping/slowing down e.g. code behavior
+	- **Error Reporting**: counts, analyzes, aggregates crashes in cloud services
+	- **Monitoring**: overview of performance, uptime and heath of cloud services (metrics, events, metadata)
+	- **Alerting**: create policies to notify you when health and uptime check results exceed a certain limit
+	- **Tracing**: tracks how requests propagate through applications/receive near real-time performance results, latency reports of VMs
+	- **Logging**: store, search, monitor and analyze log data and events from GCP
+#### Cloud Logging
 - Stores log for 30 days
 - Bigtable is not a sink option here.
 - There is no way to create an alert on Cloud Logging not receiving data from a service
 
-### Cloud Monitoring
+#### Cloud Monitoring
 - Create dashboards and visualizations
 - Collect metrics from GCP, AWS and hybrid resources
 - **Alerting** and Anamoly reporting
