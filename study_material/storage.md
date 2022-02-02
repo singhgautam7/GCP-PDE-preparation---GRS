@@ -203,7 +203,6 @@ Refer to this [link](https://cloud.google.com/bigquery/docs/introduction) for do
 - Supports CSV, JSON, Avro, SQL, Parquet
 - Querying is very expensive here
 - Command line tool = `bq`
-- **Append** has better performance than **Update**
 - Tables here have schema
 - Jobs are async tasks that work on the top of table
 - Used for load, query, extract or query data
