@@ -130,13 +130,6 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
  - All interdependent tasks need to be run through cloud composer whereas small/adhoc tasks need to be run via **cloud scheduler**.
  - It also empowers you to author, schedule, and monitor **pipelines** that span across clouds and on-premises data centers.
 
-## Cloud Functions
-You can refer to [this](https://cloud.google.com/functions/docs) for docs.
-- No ops, no server just code entry point and response, auto-scaled by GCP
-- Can be triggered by dataflow, GCS bucket events, Pub/Sub Messages and HTTP Calls
-- Cloud Functions is a managed serverless product that is able to respond to events in the cloud, such as creating a file in Cloud Storage
-- The `--max-instances` parameter limits the number of concurrently executing function instances
-
 ## DataProc vs DataFlow vs DataPrep
 
 | Workload | Dataproc | Dataflow |
