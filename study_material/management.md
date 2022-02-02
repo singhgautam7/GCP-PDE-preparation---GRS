@@ -48,6 +48,14 @@ TYPES OF ROLES
 - Collect metrics from GCP, AWS and hybrid resources
 - **Alerting** and Anamoly reporting
 
+### Components Use-Cases
+| Component | Used for |
+|--|--|
+| Stackdriver Logging | Collect semi-structured data about events |
+| Stackdriver Debugger | Inspect the state of running code |
+| Stackdriver Monitoring | Collects performance metrics |
+| Stackdriver Trace | Collect information about the time required to execute functions in a call stack |
+
 ## Cloud Deployment Manager
 - Allows you to specify all the resources needed for your application in a declarative format using yaml
 
