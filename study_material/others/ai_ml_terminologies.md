@@ -49,13 +49,11 @@ Limiting the information captured by model to prevent overfitting.
 ### Overfitting
 - Fits too well with the training data
 - When the model performs great on the input(training) data but poorly on the test data
-- Sufficient complex models can lead to overfitting
 - Correction for overfitting: 
         - Regularization, which limits the amount of data captured.
 
 ### Underfitting
 - When the model performs poorly on the input(training) data but great on the test data. 
-- Insufficiently complex models can lead to underfitting.
 - Correction for underfitting: 
         - Increase the complexity of model. Ex: Increase the number of layers in deep learning.
         - Increase the training time, epochs
