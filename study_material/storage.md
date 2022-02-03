@@ -165,15 +165,14 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 <details><summary>Row Keys in BigTable</summary>
 <p>
 
-Each table has only one index, the row key, and each row key must be unique.
-Best Practices for creating row keys:
-	- Design your row key based on the queries you will use to retrieve the data.
-	- It's important to create a row key that makes it possible to retrieve a well-defined range of rows.
-	- Avoid using a single row key to identify a value that must be updated very frequently
-	- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order
-	- Keep your row keys reasonably short
-	- Should not be only timestamp 
-	- Should not have timestamp at starting.
+Each table has only one index, the row key, and each row key must be unique. Best Practices for creating row keys:
+- Design your row key based on the queries you will use to retrieve the data.
+- It's important to create a row key that makes it possible to retrieve a well-defined range of rows.
+- Avoid using a single row key to identify a value that must be updated very frequently
+- Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order
+- Keep your row keys reasonably short
+- Should not be only timestamp 
+- Should not have timestamp at starting.
 	
 </p>
 </details>
