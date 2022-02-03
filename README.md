@@ -25,7 +25,7 @@ Even though you can find all the topics inside the _study material_ folder, the 
  1. [Non-mandatory prerequisite(s)](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
 	 - [Hadoop Ecosystem](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/hadoop.md)
 	 - [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md)
-	 - [Other Important Terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others)
+	 - [Other Important Terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/tree/main/study_material/others/definitions)
 	 - [Miscellaneous Facts](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/misc.md)
  2. [Data Lifecycle](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_lifecycle.md)
  3. [Data Transfer](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/data_transfer.md)
