@@ -9,7 +9,7 @@
 </details>
 
 ## Cloud Storage
- - It is a bucket, or we can call it a blob storage - similar to *Amazon S3
+ - It is a bucket, or we can call it a blob storage - similar to *Amazon S3*
  - The content is not indexed at all.
  - No capacity or planning required. Almost unlimited storage.
  - Can be accessed by http(s) or REST APIs.
