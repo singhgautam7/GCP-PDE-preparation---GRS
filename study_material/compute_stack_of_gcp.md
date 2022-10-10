@@ -39,3 +39,6 @@
 
 ## Comparison in Compute Services provided by GCP
 ![enter image description here](https://storage.googleapis.com/gweb-cloudblog-publish/images/GCP2Bcompute2Bservice2Bladder51qi.max-1200x1200.PNG)
+
+## Important links
+- [App Engine vs Cloud Run](https://dev.to/pcraig3/cloud-run-vs-app-engine-a-head-to-head-comparison-using-facts-and-science-1225)
