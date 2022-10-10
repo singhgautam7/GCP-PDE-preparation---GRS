@@ -37,8 +37,14 @@
 - Cloud Functions is a managed serverless product that is able to respond to events in the cloud, such as creating a file in Cloud Storage
 - The `--max-instances` parameter limits the number of concurrently executing function instances
 
-## Comparison in Compute Services provided by GCP
-![enter image description here](https://storage.googleapis.com/gweb-cloudblog-publish/images/GCP2Bcompute2Bservice2Bladder51qi.max-1200x1200.PNG)
 
-## Important links
+## Important blogs
 - [App Engine vs Cloud Run](https://dev.to/pcraig3/cloud-run-vs-app-engine-a-head-to-head-comparison-using-facts-and-science-1225)
+- [Where should you run your code](https://cloud.google.com/blog/topics/developers-practitioners/where-should-i-run-my-stuff-choosing-google-cloud-compute-option)
+
+## Where should you run your code
+![where should you run your code](https://storage.googleapis.com/gweb-cloudblog-publish/images/CvKvRvF_v10-07-21.max-2000x2000.jpg)
+
+## Comparison in Compute Services provided by GCP
+![comparison of services](https://storage.googleapis.com/gweb-cloudblog-publish/images/GCP2Bcompute2Bservice2Bladder51qi.max-1200x1200.PNG)
+
