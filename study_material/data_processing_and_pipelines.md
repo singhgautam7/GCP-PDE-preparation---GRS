@@ -129,6 +129,7 @@ You can refer to [this](https://cloud.google.com/composer/docs) for docs.
  - Cloud Composer should be used when there is inter-dependencies between the job, e.g. we need the output of a job to start another whenever the first finished, and use dependencies coming from first job
  - All interdependent tasks need to be run through cloud composer whereas small/adhoc tasks need to be run via **cloud scheduler**.
  - It also empowers you to author, schedule, and monitor **pipelines** that span across clouds and on-premises data centers.
+ - Test comment EJ
 
 ## DataProc vs DataFlow vs DataPrep
 
