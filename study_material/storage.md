@@ -153,7 +153,7 @@ Refer to this [link](https://cloud.google.com/bigtable/docs/overview) for doc.
 - Supports max of 1,000 tables in each instance.
 - Can use up to around 100 column families.
 - Empty columns don’t take up any space. Can create large number of columns, even if most columns are empty in most rows
-- Adding more nodes to a cluster (not replication) can improve the write performance
+- Adding more nodes to a cluster (not replication) can improve the write performance. Nodes in this context refer to both storage nodes and compute nodes.
 - Google recommends adding nodes when storage utilization is > 70%
 - BigTable provides **lowest latency**
 - Multi-cluster routing is beneficial in cases where high availability is needed
