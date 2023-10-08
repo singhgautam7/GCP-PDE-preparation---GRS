@@ -8,7 +8,7 @@
 
 ## Hadoop Ecosystem
 An entire ecosystem of tools have emerged around Hadoop, which are *based on interacting with HDFS*. 
-- **Hive**: Data warehouse software built o top of Hadoop that facilitates reading, writing, and managing large datasets residing in distributed storage using SQL-like queries (HiveQL). **(GCP alternative : BigQuery)**
+- **Hive**: Data warehouse software built o top of Hadoop that facilitates reading, writing, and managing large datasets residing in distributed storage using SQL-like queries (HiveQL). It's an OLAP type data warehouse. **(GCP alternative : BigQuery)**
 - **Pig**: high level scripting language (Pig Latin) that enables writing complex data transformations. **(GCP alternative : Dataflow)**
 - **Spark**: Framework for writing fast, distributed programs for data processing and analysis. **(GCP alternative : DataProc)**
 - **HBase**: Non-relational, NoSQL, column-oriented database management system that runs on top of HDFS. **(GCP alternative : BigTable)**
