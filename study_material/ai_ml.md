@@ -1,6 +1,6 @@
 It is recommended to go through [AI ML terminologies](https://github.com/singhgautam7/GCP-PDE-preparation---GRS/blob/main/study_material/others/ai_ml_terminologies.md) before starting this
 
-# Machine Learning
+# Machine Learning - test comment123
 - Types
 	- Supervised learning: 
 		- Labels are provided. 
